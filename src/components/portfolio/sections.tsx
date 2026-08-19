@@ -539,7 +539,7 @@ export function CreatorProof() {
           paper
           eyebrow="Creator proof"
           title="Real collabs, not a highlight reel"
-          lede="Screenshots pulled directly from influencer stories and posts run for Jewlera, Poochycat and Porlarisa — the personal-network side of the influencer engine described above."
+          lede="These are brands I built and scaled myself — Jewlera, Poochycat and Porlarisa. I scaled each one using Meta Ads, collaborated with over 10 macro and big influencers, designed the web storefronts, created the packaging, and ran the e-commerce operations end to end. Everything below is the influencer-network side of that engine."
         />
         {creatorGalleries.map((g) => (
           <div key={g.brand} className="mt-12">
@@ -604,18 +604,6 @@ export function Now() {
             </div>
           </div>
         </div>
-        <figure className="mt-6 border border-border">
-          <img
-            src={media.vcutCommunity}
-            alt="V Cut Gym community workshop session"
-            loading="lazy"
-            className="max-h-[420px] w-full object-cover object-[center_30%]"
-          />
-          <figcaption className="border-t border-border bg-ink-2 px-4 py-3 font-mono text-[11px] text-muted-foreground">
-            The V Cut community, built from zero through content and social — one of the live
-            workshop sessions.
-          </figcaption>
-        </figure>
       </Wrap>
     </section>
   );

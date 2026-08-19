@@ -34,12 +34,9 @@ import creator7 from "@/assets/creator-7.jpg.asset.json";
 import jewleraStorefront from "@/assets/jewlera-storefront.jpg.asset.json";
 import poochycatCollab from "@/assets/poochycat-collab.jpg.asset.json";
 import porlarisaFeature from "@/assets/porlarisa-feature.jpg.asset.json";
-import vcutCommunity from "@/assets/vcut-community.jpg.asset.json";
-
 export const media = {
   headshot: headshot.url,
   introVideo: introVideo.url,
-  vcutCommunity: vcutCommunity.url,
 };
 
 export const contact = {
