@@ -70,8 +70,8 @@ function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
           setShown(true);
           io.disconnect();
         }
