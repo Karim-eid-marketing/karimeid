@@ -34,9 +34,13 @@ import creator7 from "@/assets/creator-7.jpg.asset.json";
 import jewleraStorefront from "@/assets/jewlera-storefront.jpg.asset.json";
 import poochycatCollab from "@/assets/poochycat-collab.jpg.asset.json";
 import porlarisaFeature from "@/assets/porlarisa-feature.jpg.asset.json";
+import adCreative1 from "@/assets/ad-creative-51.mp4.asset.json";
+import adCreative2 from "@/assets/ad-creative-56.mp4.asset.json";
+import adCreative3 from "@/assets/ad-creative-90.mp4.asset.json";
 export const media = {
   headshot: headshot.url,
   introVideo: introVideo.url,
+  adCreatives: [adCreative1.url, adCreative2.url, adCreative3.url],
 };
 
 export const contact = {
