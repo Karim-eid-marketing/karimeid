@@ -272,9 +272,35 @@ export function Intro() {
           />
         </div>
       </Wrap>
+
+      <Wrap className="mt-16">
+        <SectionHead
+          eyebrow="Ad creatives"
+          title="Meta ad creatives we produced"
+          lede="These are live ad creatives we ran on Meta — built through our creator collabs, from concept and briefing to shooting, editing and testing them as scroll-stopping paid assets."
+        />
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          {media.adCreatives.map((src, i) => (
+            <div key={src} className="border border-border bg-ink-2 p-2 shadow-[var(--shadow-lift)]">
+              <video
+                src={src}
+                controls
+                playsInline
+                muted
+                preload="metadata"
+                className="aspect-[9/16] w-full object-cover"
+              />
+              <div className="px-1 pb-1 pt-2 font-mono text-[11px] text-signal-dim">
+                Creative {String(i + 1).padStart(2, "0")} · Meta · creator collab
+              </div>
+            </div>
+          ))}
+        </div>
+      </Wrap>
     </section>
   );
 }
+
 
 export function Skills() {
   return (
