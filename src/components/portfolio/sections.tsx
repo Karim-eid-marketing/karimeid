@@ -262,13 +262,13 @@ export function Intro() {
             lede="Who I am, what I do, and why I'd be a good fit for your brand — no script, just the short version."
           />
         </div>
-        <div className="border border-border bg-ink-2 p-2 shadow-[var(--shadow-lift)]">
+        <div className="mx-auto w-full max-w-xs border border-border bg-ink-2 p-1.5 shadow-[var(--shadow-lift)] sm:max-w-sm">
           <video
             src={media.introVideo}
             controls
             playsInline
             preload="metadata"
-            className="w-full"
+            className="max-h-[520px] w-full object-contain"
           />
         </div>
       </Wrap>
