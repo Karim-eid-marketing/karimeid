@@ -365,7 +365,6 @@ export const cases = [
       ],
     },
     shots: [
-      { src: cuzymartStorefront.url, cap: "Live storefront — cuzymart.com" },
       { src: cuzymartPricing.url, cap: "Shopify pricing & margin panel" },
       { src: cuzymartOrders.url, cap: "Live order flow — Shopify Orders" },
       { src: cuzymartCatalog.url, cap: "Product catalog — 8 of 30+ SKUs" },
@@ -422,11 +421,6 @@ export const cases = [
       { src: avosilkStoryCode.url, cap: "Story insights — @avo_silk code" },
       { src: avosilkStoryReach.url, cap: "Story insights — 27.4K reach" },
       { src: avosilkVetting.url, cap: "Live creator vetting sheet — scored before outreach", wide: true },
-      {
-        src: avosilkHighlights.url,
-        cap: "Creator highlights reel — up to 33.9K views per cover",
-        wide: true,
-      },
     ],
   },
 ];
