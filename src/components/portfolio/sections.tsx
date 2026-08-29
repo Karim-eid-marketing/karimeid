@@ -572,7 +572,12 @@ export function CreatorProof() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {g.items.map((it) => (
-                <figure key={it.cap} className="group border border-paper-border bg-paper">
+                <figure
+                  key={it.cap}
+                  className={`group border border-paper-border bg-paper ${
+                    "wide" in it && (it as { wide?: boolean }).wide ? "sm:col-span-2" : ""
+                  }`}
+                >
                   <div className="overflow-hidden">
                     <img
                       src={it.src}
