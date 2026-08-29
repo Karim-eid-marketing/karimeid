@@ -6,6 +6,8 @@ import decogalSeoPlan from "@/assets/decogal-seo-plan.jpg.asset.json";
 import decogalPostingSchedule from "@/assets/decogal-posting-schedule.jpg.asset.json";
 import decogalTimeline from "@/assets/decogal-timeline.jpg.asset.json";
 import decogalStrategyDoc from "@/assets/decogal-strategy-doc.jpg.asset.json";
+import decogalAdsBudget from "@/assets/decogal-ads-budget.jpg.asset.json";
+import decogalAdsTargeting from "@/assets/decogal-ads-targeting.jpg.asset.json";
 
 
 import cuzymartPricing from "@/assets/cuzymart-pricing.jpg.asset.json";
@@ -32,6 +34,7 @@ import creator5 from "@/assets/creator-5.jpg.asset.json";
 import creator6 from "@/assets/creator-6.jpg.asset.json";
 import creator7 from "@/assets/creator-7.jpg.asset.json";
 import jewleraStorefront from "@/assets/jewlera-storefront.jpg.asset.json";
+import jewleraStella from "@/assets/jewlera-stella.jpg.asset.json";
 import poochycatCollab from "@/assets/poochycat-collab.jpg.asset.json";
 import porlarisaFeature from "@/assets/porlarisa-feature.jpg.asset.json";
 import adCreative1 from "@/assets/ad-creative-51.mp4.asset.json";
@@ -320,6 +323,8 @@ export const cases = [
       { src: decogalSeoPlan.url, cap: "SEO action plan" },
       { src: decogalPostingSchedule.url, cap: "Posting schedule" },
       { src: decogalTimeline.url, cap: "Marketing plan timeline — 2024" },
+      { src: decogalAdsBudget.url, cap: "Live campaign — $150/day website-conversions build, continuous schedule, max-delivery bidding", wide: true },
+      { src: decogalAdsTargeting.url, cap: "Ad set targeting — Beauty & Fashion / Women's Lifestyle placements, 99.7M–105.3M audience", wide: true },
       { src: decogalStrategyDoc.url, cap: "Marketing strategy document", wide: true },
     ],
   },
@@ -437,6 +442,7 @@ export const creatorGalleries = [
       { src: creator6.url, cap: "@stellacini — pearl necklace feature" },
       { src: creator7.url, cap: "@dandrasimmons — bracelet feature" },
       { src: jewleraStorefront.url, cap: "jewlera.com — live storefront" },
+      { src: jewleraStella.url, cap: "jewlera.com — Stella Cini creator collection on the live storefront", wide: true },
     ],
   },
   {
