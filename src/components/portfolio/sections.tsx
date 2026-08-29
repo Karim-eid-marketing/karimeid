@@ -444,7 +444,7 @@ export function Work() {
         <SectionHead
           eyebrow="Case studies"
           title="Three brands, three growth engines"
-          lede="Real screenshots below are cropped for readability; customer names and creator contact details are redacted for privacy. Nothing is staged."
+          lede="Real screenshots below, shown in full; customer names and creator contact details are redacted for privacy. Nothing is staged."
         />
 
         <div className="mt-12 space-y-10">
