@@ -578,7 +578,7 @@ export function CreatorProof() {
                       src={it.src}
                       alt={it.cap}
                       loading="lazy"
-                      className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-[1.04]"
+                      className="w-full object-contain transition duration-500 group-hover:scale-[1.02]"
                     />
                   </div>
                   <figcaption className="border-t border-paper-border px-3 py-2 font-mono text-[10.5px] text-paper-muted">
