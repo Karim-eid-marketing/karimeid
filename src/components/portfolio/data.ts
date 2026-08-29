@@ -7,7 +7,7 @@ import decogalPostingSchedule from "@/assets/decogal-posting-schedule.jpg.asset.
 import decogalTimeline from "@/assets/decogal-timeline.jpg.asset.json";
 import decogalStrategyDoc from "@/assets/decogal-strategy-doc.jpg.asset.json";
 
-import cuzymartStorefront from "@/assets/cuzymart-storefront.jpg.asset.json";
+
 import cuzymartPricing from "@/assets/cuzymart-pricing.jpg.asset.json";
 import cuzymartOrders from "@/assets/cuzymart-orders.jpg.asset.json";
 import cuzymartCatalog from "@/assets/cuzymart-catalog.jpg.asset.json";
@@ -22,7 +22,7 @@ import avosilkCart from "@/assets/avosilk-cart.jpg.asset.json";
 import avosilkStoryCode from "@/assets/avosilk-story-code.jpg.asset.json";
 import avosilkStoryReach from "@/assets/avosilk-story-reach.jpg.asset.json";
 import avosilkVetting from "@/assets/avosilk-vetting.jpg.asset.json";
-import avosilkHighlights from "@/assets/avosilk-highlights.jpg.asset.json";
+
 
 import creator1 from "@/assets/creator-1.jpg.asset.json";
 import creator2 from "@/assets/creator-2.jpg.asset.json";
