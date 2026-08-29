@@ -506,3 +506,81 @@ export const tools = [
   "Canva",
   "Excel / Sheets",
 ];
+
+/* ---------- Added depth: numbers, benchmarks, proof, FAQ ---------- */
+
+export const bigNumbers = [
+  { num: "6+", lbl: "Years in performance marketing", sub: "2018 → today, across affiliate, DTC and agency-style client work" },
+  { num: "E£180K", lbl: "Ad spend managed at Decogal", sub: "Returned E£720K in tracked revenue — a 4.00x blended ROAS" },
+  { num: "E£720K", lbl: "Revenue generated from that spend", sub: "Meta-led, organic and creator content feeding the same funnel" },
+  { num: "$52K", lbl: "CuzyMart net sales, FY2024", sub: "Split ~50/50 between influencer-driven and Meta Ads revenue" },
+  { num: "100+", lbl: "Creators sourced & vetted", sub: "Scored on female ratio, engagement rate, audit score and real-audience %" },
+  { num: "10+", lbl: "Macro / big influencer collabs", sub: "Gifted, paid and code-based partnerships negotiated end to end" },
+  { num: "47", lbl: "SKUs priced & margin-modelled", sub: "17 modelled line-by-line at CuzyMart, 30+ more across owned stores" },
+  { num: "22–53%", lbl: "Margin range engineered per SKU", sub: "Margin — not gut feel — decided which products got paid budget" },
+  { num: "3", lbl: "Shopify stores built & operated solo", sub: "Jewlera, Poochycat, Furry Fiesta Family — design to fulfilment" },
+  { num: "20%", lbl: "Wasted ad spend removed", sub: "Weekly kill/scale reviews against CPA guardrails" },
+  { num: "25%", lbl: "Faster campaign planning", sub: "One unified calendar replacing three disconnected plans" },
+  { num: "30%", lbl: "Sales lift at Avosilk", sub: "Driven by a scored creator engine, not broader targeting" },
+  { num: "27.4K", lbl: "Reach on a single creator story", sub: "770 sticker taps on one discount-code story" },
+  { num: "50%+", lbl: "Client sales via influencer channel", sub: "Tracked with per-creator discount codes" },
+  { num: "8", lbl: "Step media-buying process", sub: "Applied identically to every account I touch" },
+  { num: "2", lbl: "Languages, 3 markets", sub: "Arabic & English — Egypt, Saudi Arabia and international brands" },
+];
+
+export const mediaBuyingNumbers = [
+  { k: "Ad spend managed", v: "E£180K+", note: "Decogal 2024, plus owned-store and client budgets" },
+  { k: "Blended ROAS", v: "4.00x", note: "E£180K in → E£720K tracked revenue out" },
+  { k: "Break-even ROAS discipline", v: "Set pre-launch", note: "Every account starts with the number the margin can carry" },
+  { k: "Creative angles per product", v: "3–5", note: "Own hook, script and format per angle" },
+  { k: "Testing budget per variant", v: "Small & structured", note: "One variable at a time, kill rules written before launch" },
+  { k: "Reporting cadence", v: "Weekly", note: "ROAS · CAC · AOV · CTR · CPM reviewed and reallocated" },
+  { k: "Platforms bought on", v: "3", note: "Meta, TikTok and Google Ads" },
+  { k: "Wasted spend cut", v: "-20%", note: "Achieved inside the first optimization cycles" },
+];
+
+export const proofPoints = [
+  {
+    t: "I've spent my own money on ads",
+    d: "Three Shopify stores I owned and funded myself. When the ROAS drops, it comes out of my pocket — which is exactly why I optimize on contribution margin, not on dashboard metrics.",
+  },
+  {
+    t: "Every screenshot on this page is real",
+    d: "Ad manager builds, Shopify order flows, margin sheets, creator vetting trackers, story insights. Nothing mocked up, only names and contacts redacted.",
+  },
+  {
+    t: "I replace three hires",
+    d: "Media buyer, influencer manager and store/CRO owner — running from one calendar, so paid, creators, SEO and content never contradict each other.",
+  },
+  {
+    t: "You get the system, not just the service",
+    d: "Documented processes: 8-step media buying, 6-pillar SEO plan, 4-check creator vetting, margin model per SKU. It stays in your business after the engagement ends.",
+  },
+];
+
+export const faqs = [
+  {
+    q: "What's the fastest thing you could fix in my account?",
+    a: "Usually spend allocation. In week one I map every campaign to its true break-even ROAS and cut what can't clear it — that's where the 20% of wasted spend at Decogal came from, without touching revenue.",
+  },
+  {
+    q: "Do you only do paid media?",
+    a: "No. Media buying is the core, but it's paired with creator sourcing and negotiation, SEO, content direction, Shopify storefront design and CRO. Same operator, one calendar.",
+  },
+  {
+    q: "What budgets have you handled?",
+    a: "From $150/day test builds up to E£180K in managed annual spend, plus self-funded budgets on my own stores. The process is the same at every level — margin first, evidence second.",
+  },
+  {
+    q: "Full-time role or freelance retainer?",
+    a: "Both work. Whether it's a marketing manager role or a growth retainer, the first 30 days follow the same audit → plan → build → scale sequence.",
+  },
+  {
+    q: "How do you report?",
+    a: "Weekly ROAS, CAC, AOV, CTR and CPM with the decisions attached — what was killed, what was scaled and why — plus a monthly strategy review against revenue.",
+  },
+  {
+    q: "Which markets do you know best?",
+    a: "Egypt and Saudi Arabia natively, plus US/EU DTC audiences from my own stores and creator network. Bilingual in Arabic and English.",
+  },
+];
