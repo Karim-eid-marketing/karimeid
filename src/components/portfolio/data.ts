@@ -7,7 +7,7 @@ import decogalPostingSchedule from "@/assets/decogal-posting-schedule.jpg.asset.
 import decogalTimeline from "@/assets/decogal-timeline.jpg.asset.json";
 import decogalStrategyDoc from "@/assets/decogal-strategy-doc.jpg.asset.json";
 
-import cuzymartStorefront from "@/assets/cuzymart-storefront.jpg.asset.json";
+
 import cuzymartPricing from "@/assets/cuzymart-pricing.jpg.asset.json";
 import cuzymartOrders from "@/assets/cuzymart-orders.jpg.asset.json";
 import cuzymartCatalog from "@/assets/cuzymart-catalog.jpg.asset.json";
@@ -22,7 +22,7 @@ import avosilkCart from "@/assets/avosilk-cart.jpg.asset.json";
 import avosilkStoryCode from "@/assets/avosilk-story-code.jpg.asset.json";
 import avosilkStoryReach from "@/assets/avosilk-story-reach.jpg.asset.json";
 import avosilkVetting from "@/assets/avosilk-vetting.jpg.asset.json";
-import avosilkHighlights from "@/assets/avosilk-highlights.jpg.asset.json";
+
 
 import creator1 from "@/assets/creator-1.jpg.asset.json";
 import creator2 from "@/assets/creator-2.jpg.asset.json";
@@ -365,7 +365,6 @@ export const cases = [
       ],
     },
     shots: [
-      { src: cuzymartStorefront.url, cap: "Live storefront — cuzymart.com" },
       { src: cuzymartPricing.url, cap: "Shopify pricing & margin panel" },
       { src: cuzymartOrders.url, cap: "Live order flow — Shopify Orders" },
       { src: cuzymartCatalog.url, cap: "Product catalog — 8 of 30+ SKUs" },
@@ -422,11 +421,6 @@ export const cases = [
       { src: avosilkStoryCode.url, cap: "Story insights — @avo_silk code" },
       { src: avosilkStoryReach.url, cap: "Story insights — 27.4K reach" },
       { src: avosilkVetting.url, cap: "Live creator vetting sheet — scored before outreach", wide: true },
-      {
-        src: avosilkHighlights.url,
-        cap: "Creator highlights reel — up to 33.9K views per cover",
-        wide: true,
-      },
     ],
   },
 ];
