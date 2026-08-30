@@ -20,7 +20,7 @@ import cuzymartUgc2 from "@/assets/cuzymart-ugc-2.jpg.asset.json";
 import cuzymartOutreach from "@/assets/cuzymart-outreach.jpg.asset.json";
 
 import avosilkStyling from "@/assets/avosilk-styling.jpg.asset.json";
-import avosilkCart from "@/assets/avosilk-cart.jpg.asset.json";
+
 import avosilkStoryCode from "@/assets/avosilk-story-code.jpg.asset.json";
 import avosilkStoryReach from "@/assets/avosilk-story-reach.jpg.asset.json";
 import avosilkVetting from "@/assets/avosilk-vetting.jpg.asset.json";
@@ -422,7 +422,6 @@ export const cases = [
     ],
     shots: [
       { src: avosilkStyling.url, cap: "Product styling — sleep mask & pillowcase" },
-      { src: avosilkCart.url, cap: "Cart — influencer code at checkout" },
       { src: avosilkStoryCode.url, cap: "Story insights — @avo_silk code" },
       { src: avosilkStoryReach.url, cap: "Story insights — 27.4K reach" },
       { src: avosilkVetting.url, cap: "Live creator vetting sheet — scored before outreach", wide: true },
