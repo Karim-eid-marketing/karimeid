@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
+  ByTheNumbers,
   CreatorProof,
   Ecommerce,
   Experience,
+  Faq,
   Footer,
   Hero,
   HowIWork,
@@ -13,6 +15,7 @@ import {
   Seo,
   Skills,
   Ticker,
+  WhyMe,
   Work,
 } from "@/components/portfolio/sections";
 

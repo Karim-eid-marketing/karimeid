@@ -757,6 +757,60 @@ export function HowIWork() {
   );
 }
 
+export function WhyMe() {
+  return (
+    <section id="why" className="bg-paper py-20 text-paper-foreground">
+      <Wrap>
+        <SectionHead
+          paper
+          eyebrow="Why me"
+          title="What you get that a job title can't show"
+        />
+        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2">
+          {proofPoints.map((p) => (
+            <div key={p.t} className="bg-paper p-6 transition-colors hover:bg-[oklch(0.92_0.016_85)]">
+              <h3 className="font-display text-lg font-semibold">{p.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{p.d}</p>
+            </div>
+          ))}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function Faq() {
+  return (
+    <section id="faq" className="border-b border-border py-20">
+      <Wrap>
+        <SectionHead
+          eyebrow="FAQ"
+          title="The questions I'd ask before hiring me"
+          lede="Straight answers on budgets, scope, reporting and fit — the same answers I'd give you on the first call."
+        />
+        <div className="mt-12 space-y-3">
+          {faqs.map((f) => (
+            <details
+              key={f.q}
+              className="group surface-ink open:border-signal/40"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-display text-base font-semibold transition-colors hover:text-signal [&::-webkit-details-marker]:hidden">
+                {f.q}
+                <span className="shrink-0 font-mono text-lg text-signal transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p className="border-t border-border px-5 py-4 text-sm leading-relaxed text-muted-foreground">
+                {f.a}
+              </p>
+            </details>
+          ))}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
 export function Footer() {
   return (
     <footer id="contact" className="hero-aura border-t border-border pt-20 pb-10">
