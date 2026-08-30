@@ -73,15 +73,18 @@ function Index() {
       <main>
         <Hero />
         <Intro />
+        <ByTheNumbers />
         <Skills />
         <PaidMedia />
         <Seo />
         <Ecommerce />
         <Work />
         <CreatorProof />
+        <WhyMe />
         <Now />
         <Experience />
         <HowIWork />
+        <Faq />
       </main>
       <Footer />
     </div>
