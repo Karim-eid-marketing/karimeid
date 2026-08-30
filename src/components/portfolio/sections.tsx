@@ -140,13 +140,14 @@ export function Ticker() {
 
 const navLinks = [
   ["#intro", "Intro"],
-  ["#skills", "Skills"],
+  ["#numbers", "Numbers"],
   ["#paid", "Paid Media"],
   ["#seo", "SEO"],
   ["#ecommerce", "E-Commerce"],
   ["#work", "Work"],
   ["#proof", "Creator Proof"],
   ["#experience", "Experience"],
+  ["#faq", "FAQ"],
 ];
 
 export function Nav() {
@@ -371,6 +372,52 @@ export function PaidMedia() {
                 ))}
               </div>
             </div>
+          ))}
+        </div>
+        <div className="mt-12">
+          <Eyebrow>Media buying scoreboard</Eyebrow>
+          <h3 className="mt-3 font-display text-2xl font-semibold">The numbers behind the process</h3>
+          <div className="mt-6 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+            {mediaBuyingNumbers.map((m) => (
+              <div key={m.k} className="bg-background p-5 transition-colors hover:bg-ink-2">
+                <div className="font-mono text-[10.5px] tracking-wider text-muted-foreground uppercase">
+                  {m.k}
+                </div>
+                <div className="mt-2 font-display text-2xl font-bold tracking-tight text-signal">
+                  {m.v}
+                </div>
+                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{m.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function ByTheNumbers() {
+  return (
+    <section id="numbers" className="border-b border-border py-20">
+      <Wrap>
+        <SectionHead
+          eyebrow="By the numbers"
+          title="Sixteen receipts, zero adjectives"
+          lede="Every claim on this page has a number behind it — ad spend managed, revenue returned, SKUs modelled, creators vetted. This is the full ledger."
+        />
+        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          {bigNumbers.map((n, i) => (
+            <Reveal key={n.lbl} delay={(i % 4) * 50}>
+              <div className="h-full bg-background p-5 transition-colors hover:bg-ink-2">
+                <div className="font-display text-3xl font-bold tracking-tight text-signal">
+                  {n.num}
+                </div>
+                <div className="mt-2 font-mono text-[11px] tracking-wide text-foreground uppercase">
+                  {n.lbl}
+                </div>
+                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{n.sub}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </Wrap>
