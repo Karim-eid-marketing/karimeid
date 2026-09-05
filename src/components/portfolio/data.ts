@@ -583,3 +583,159 @@ export const faqs = [
     a: "Egypt and Saudi Arabia natively, plus US/EU DTC audiences from my own stores and creator network. Bilingual in Arabic and English.",
   },
 ];
+
+/* ---------- Full-time positioning layer ---------- */
+
+export const brandExperience = [
+  {
+    brand: "Jewlera",
+    area: "Influencer Marketing / Brand Growth",
+    duration: "2021 — 2023 · ~2 years",
+    note: "Jewelry DTC · Shopify",
+    worked: [
+      "Influencer marketing & creator partnerships",
+      "Creator discovery, outreach and vetting",
+      "Creator relationship management",
+      "Campaign planning & product seeding",
+      "Discount-code / affiliate collab structures",
+      "Storefront and product-page work",
+      "Performance tracking & e-commerce growth",
+    ],
+    results: [
+      "7 documented creator collaborations shown on this page (gifted, paid and code-based)",
+      "Creator content reused as paid and organic social proof",
+      "Creator collection featured on the live storefront (Stella Cini)",
+    ],
+  },
+  {
+    brand: "Poochy Cat",
+    area: "Influencer Marketing / Campaign Management",
+    duration: "2021 — 2023",
+    note: "Pet products · DTC",
+    worked: [
+      "Creator prospecting and outreach",
+      "Collab negotiation and briefing",
+      "Campaign coordination with macro creators",
+      "UGC sourcing for paid and organic use",
+      "Campaign tracking and performance analysis",
+    ],
+    results: [
+      "Macro creator collaboration (@thecomedycat) produced video assets used in campaigns",
+      "Creator-led content used as the primary creative angle for paid social",
+    ],
+  },
+  {
+    brand: "Porlarisa",
+    area: "Influencer Marketing / Brand Promotion",
+    duration: "Campaign engagement",
+    note: "DTC brand",
+    worked: [
+      "Creator outreach and campaign feature placement",
+      "Content coordination with the brand",
+      "Performance tracking of the campaign feature",
+    ],
+    results: ["Self-run campaign feature delivered and documented"],
+  },
+  {
+    brand: "Decogal",
+    area: "Marketing Management (Influencer, Paid & Organic)",
+    duration: "2024",
+    note: "Home decor e-commerce · Egypt",
+    worked: [
+      "Influencer relationships and creator-led content direction",
+      "Meta Ads campaign management",
+      "Content calendar and organic planning",
+      "On-site SEO action plan",
+      "Budget allocation and weekly performance review",
+    ],
+    results: [
+      "Brand result: E£180K ad spend returned E£720K tracked revenue (4.00x ROAS)",
+      "Campaign result: 20% of wasted ad spend removed",
+      "Campaign result: 25% faster campaign planning through one unified calendar",
+    ],
+  },
+  {
+    brand: "CuzyMart",
+    area: "Influencer & Growth Marketing",
+    duration: "2024",
+    note: "Wooden toys · Saudi-based · Shopify",
+    worked: [
+      "Influencer outreach at scale (100+ contact tracker)",
+      "Creator vetting and UGC briefing",
+      "Meta Ads campaign management",
+      "SKU pricing and margin modelling",
+      "Catalog and merchandising work",
+    ],
+    results: [
+      "Brand result: $52K net sales across FY2024",
+      "Campaign contribution: roughly half of revenue came through the influencer channel",
+      "17 SKUs modelled at 22–53% margin, deciding where budget went",
+    ],
+  },
+  {
+    brand: "Avosilk",
+    area: "Influencer Engine / E-commerce Growth",
+    duration: "Brand growth engagement",
+    note: "Silk sleepwear · DTC",
+    worked: [
+      "Creator sourcing and 4-check vetting system",
+      "Product seeding and code-based collabs",
+      "Campaign tracking through story insights and code redemptions",
+      "Offer and storefront logic",
+    ],
+    results: [
+      "Brand result: +30% increase in sales",
+      "Campaign result: 27.4K reach and 770 sticker taps on a single creator story",
+    ],
+  },
+];
+
+export const influencerCapabilities = [
+  { t: "Creator discovery & prospecting", d: "Sourcing macro and micro creators by niche, audience fit and market — Egypt, Saudi Arabia, US and EU." },
+  { t: "Creator vetting", d: "Four checks before outreach: audience gender split, engagement rate, third-party audit score and real-audience percentage." },
+  { t: "Outreach at scale", d: "Merge-email and DM outreach tracked through Opened / Clicked / Responded / Bounced — a documented pipeline, 100+ contacts logged." },
+  { t: "Negotiation", d: "Gifted, paid and commission/code-based deals negotiated end to end, priced against the product margin." },
+  { t: "Relationship management", d: "Ongoing creator communication, briefing, reshoots and repeat collaborations rather than one-off posts." },
+  { t: "Campaign coordination", d: "Timelines, deliverables, posting windows and content approvals coordinated across multiple creators at once." },
+  { t: "UGC & product seeding", d: "Briefing hooks and formats, sending product, and turning the resulting UGC into both organic and paid assets." },
+  { t: "Affiliate & commission structures", d: "Per-creator discount codes and commission logic so every collaboration is attributable to sales." },
+  { t: "Creator databases", d: "Building and maintaining structured creator databases with scoring, contact history and campaign outcomes." },
+  { t: "Tracking & performance analysis", d: "Code redemptions, reach, sticker taps, sales share and cost-per-acquired-customer per creator." },
+  { t: "Influencer-to-sales conversion", d: "Landing pages, offers and storefront work so creator traffic converts instead of leaking at checkout." },
+  { t: "Paid amplification of creator content", d: "Spark Ads and Meta whitelisting so the best-performing creator posts get budget behind them." },
+];
+
+export const influencerNumbers = [
+  { num: "100+", lbl: "Creators sourced & vetted" },
+  { num: "10+", lbl: "Macro / big creator collaborations" },
+  { num: "50%+", lbl: "Share of sales via influencer channel" },
+  { num: "27.4K", lbl: "Reach, single creator story" },
+  { num: "770", lbl: "Sticker taps, single story" },
+  { num: "4", lbl: "Vetting checks per creator" },
+];
+
+export const entrepreneurial = [
+  {
+    t: "Jewlera · Poochycat · Furry Fiesta Family",
+    d: "Three Shopify stores I owned and operated myself between 2019 and 2023 — product research, storefront design, Meta Ads, creator partnerships, TikTok organic/SEO and fulfilment.",
+  },
+  {
+    t: "What it taught me commercially",
+    d: "Pricing against landed cost, shipping and platform fees; knowing break-even ROAS before launch; and judging marketing on contribution margin rather than dashboard metrics.",
+  },
+  {
+    t: "V Cut Gym (2024 — present)",
+    d: "Co-founded a local fitness brand and run its content strategy, organic growth and community engagement — the same playbooks applied to a service business.",
+  },
+  {
+    t: "Why it matters in a team",
+    d: "Having operated a P&L means I understand what marketing costs the business, not just what it costs the ad account — useful context to bring into a company marketing team.",
+  },
+];
+
+export const aboutParas = [
+  "I specialize in influencer and creator marketing, with hands-on experience working with brands such as Jewlera, Poochy Cat, Porlarisa, Decogal, CuzyMart and Avosilk — sourcing and vetting creators, running outreach and negotiation, coordinating campaigns and turning creator partnerships into measurable e-commerce sales.",
+  "Alongside that, I have practical performance marketing experience across Meta, TikTok and Google Ads, plus Shopify CRO, SEO, email/outreach and social content — so I can connect creator campaigns to the rest of the funnel instead of running them in isolation.",
+  "I have also operated my own e-commerce businesses, which gives me a strong understanding of the commercial side of marketing: margins, break-even ROAS, pricing and what a campaign actually contributes to the business.",
+  "I'm now looking to bring that experience into a full-time marketing team, where I can own influencer and creator partnerships and support wider growth work day to day.",
+];
