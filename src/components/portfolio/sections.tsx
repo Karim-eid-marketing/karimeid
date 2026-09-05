@@ -139,15 +139,15 @@ export function Ticker() {
 }
 
 const navLinks = [
-  ["#intro", "Intro"],
-  ["#numbers", "Numbers"],
-  ["#paid", "Paid Media"],
-  ["#seo", "SEO"],
-  ["#ecommerce", "E-Commerce"],
-  ["#work", "Work"],
+  ["#numbers", "Key Results"],
+  ["#brands", "Brand Experience"],
+  ["#influencer", "Influencer Marketing"],
+  ["#work", "Case Studies"],
   ["#proof", "Creator Proof"],
-  ["#experience", "Experience"],
-  ["#faq", "FAQ"],
+  ["#entrepreneurship", "Entrepreneurship"],
+  ["#skills", "Skills"],
+  ["#about", "About"],
+  ["#contact", "Contact"],
 ];
 
 export function Nav() {
@@ -157,7 +157,7 @@ export function Nav() {
         <a href="#top" className="font-display text-lg font-bold tracking-tight">
           KARIM EID<span className="text-signal">.</span>
         </a>
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex">
           {navLinks.map(([href, label]) => (
             <a
               key={href}
@@ -169,10 +169,12 @@ export function Nav() {
           ))}
         </div>
         <a
-          href={`mailto:${contact.email}`}
+          href={contact.linkedin}
+          target="_blank"
+          rel="noopener"
           className="border border-signal px-4 py-2 font-mono text-[11px] tracking-wider text-signal uppercase transition-colors hover:bg-signal hover:text-primary-foreground"
         >
-          Hire Karim
+          Connect on LinkedIn
         </a>
       </Wrap>
     </nav>
@@ -186,37 +188,71 @@ export function Hero() {
       <Wrap className="relative py-16 md:py-24">
         <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_1fr]">
           <div>
-            <Eyebrow>Performance &amp; Influencer Marketing · 6+ Years</Eyebrow>
-            <h1 className="mt-5 font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
-              I turn ad spend and creator relationships into{" "}
-              <em className="text-signal not-italic">repeatable revenue.</em>
+            <div className="mb-5 inline-flex items-center gap-2 border border-signal/50 bg-signal/10 px-3 py-1.5 font-mono text-[11px] tracking-wider text-signal uppercase">
+              <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-signal" />
+              Open to full-time opportunities
+            </div>
+            <h1 className="font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
+              Influencer &amp; Creator{" "}
+              <em className="text-signal not-italic">Marketing Specialist</em>
             </h1>
             <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-muted-foreground">
-              Performance and influencer marketing specialist for Shopify-based DTC brands — Meta,
-              TikTok &amp; Google Ads, creator partnerships, UGC, SEO, email/outreach systems and
-              storefront design, run as one connected growth system instead of five separate hires.
-              Based in Egypt, working with clients across Egypt, Saudi Arabia and beyond. Bilingual —
-              Arabic &amp; English.
+              Influencer partnerships, creator outreach, UGC and performance-driven e-commerce
+              growth. Hands-on experience working with brands including Jewlera, Poochy Cat,
+              Porlarisa, Decogal, CuzyMart and Avosilk — 100+ creators sourced and vetted, 10+ macro
+              collaborations, and measurable e-commerce results. Supported by paid media, Shopify
+              CRO, SEO and email experience. Cairo, Egypt — Arabic &amp; English.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={`mailto:${contact.email}`}
+                href="#brands"
                 className="bg-signal px-5 py-3 font-mono text-xs tracking-wider text-primary-foreground uppercase shadow-[var(--shadow-signal)] transition-transform hover:-translate-y-0.5"
               >
-                Start a project →
+                View my experience →
               </a>
               <a
                 href="#work"
                 className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
               >
-                See the case studies
+                View case studies
               </a>
               <a
-                href={contact.phoneHref}
+                href={contact.linkedin}
+                target="_blank"
+                rel="noopener"
                 className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
               >
-                {contact.phone}
+                Connect on LinkedIn
               </a>
+            </div>
+            <div className="mt-7 flex flex-wrap gap-2">
+              {[
+                "Influencer Marketing",
+                "Creator Partnerships",
+                "Creator Outreach",
+                "UGC",
+                "Affiliate & Creator Programs",
+                "E-Commerce Growth",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="border border-signal/40 bg-signal/5 px-3 py-1.5 font-mono text-[10.5px] tracking-wide text-signal uppercase"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {["Paid Media", "Performance Marketing", "Shopify CRO", "SEO", "Social Media", "Email Marketing"].map(
+                (t) => (
+                  <span
+                    key={t}
+                    className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wide text-muted-foreground uppercase"
+                  >
+                    {t}
+                  </span>
+                ),
+              )}
             </div>
           </div>
 
@@ -224,14 +260,14 @@ export function Hero() {
             <div className="absolute -inset-3 bg-[var(--grad-signal)] opacity-15 blur-2xl" />
             <img
               src={media.headshot}
-              alt="Karim Eid, performance and influencer marketing specialist"
+              alt="Karim Eid, influencer and creator marketing specialist"
               className="relative w-full border border-border object-cover shadow-[var(--shadow-lift)]"
             />
             <div className="relative -mt-px flex items-center justify-between border border-t-0 border-border bg-ink-2 px-4 py-3 font-mono text-[11px] text-muted-foreground">
               <span>KARIM EID · CAIRO, EG</span>
               <span className="flex items-center gap-2 text-signal">
                 <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-signal" />
-                OPEN TO WORK
+                OPEN TO FULL-TIME ROLES
               </span>
             </div>
           </div>
@@ -253,6 +289,172 @@ export function Hero() {
     </header>
   );
 }
+
+export function BrandExperience() {
+  return (
+    <section id="brands" className="border-b border-border py-20">
+      <Wrap>
+        <SectionHead
+          eyebrow="Professional brand experience"
+          title="Brands I've worked with"
+          lede="Marketing experience with real brands — influencer partnerships, campaign management and e-commerce growth. Each entry shows the brand, the area I worked in, the timeframe and the documented results."
+        />
+        <div className="mt-12 grid gap-px border border-border bg-border lg:grid-cols-2">
+          {brandExperience.map((b, i) => (
+            <Reveal key={b.brand} delay={(i % 2) * 60}>
+              <article className="h-full bg-background p-6">
+                <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border pb-4">
+                  <h3 className="font-display text-2xl font-bold tracking-tight">{b.brand}</h3>
+                  <span className="font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase">
+                    {b.note}
+                  </span>
+                </div>
+                <div className="mt-4 font-mono text-[11px] tracking-wider text-signal uppercase">
+                  {b.area}
+                </div>
+                <div className="mt-1 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
+                  Duration: {b.duration}
+                </div>
+
+                <div className="mt-5 font-mono text-[10.5px] tracking-wider text-foreground uppercase">
+                  What I worked on
+                </div>
+                <ul className="mt-2 space-y-1.5">
+                  {b.worked.map((w) => (
+                    <li key={w} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                      <span className="text-signal">·</span>
+                      {w}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 font-mono text-[10.5px] tracking-wider text-foreground uppercase">
+                  Results
+                </div>
+                <ul className="mt-2 space-y-1.5">
+                  {b.results.map((r) => (
+                    <li key={r} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                      <span className="text-signal">→</span>
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+        <p className="mt-6 font-mono text-[11px] leading-relaxed text-muted-foreground">
+          Note: these are marketing engagements and brand collaborations, described exactly as they
+          were — not claimed as full-time employment.
+        </p>
+      </Wrap>
+    </section>
+  );
+}
+
+export function InfluencerExperience() {
+  return (
+    <section id="influencer" className="bg-paper py-20 text-paper-foreground">
+      <Wrap>
+        <SectionHead
+          paper
+          eyebrow="Core specialization"
+          title="Influencer &amp; Creator Marketing Experience"
+          lede="This is the work I know best: finding the right creators, vetting them properly, negotiating the deal, running the campaign and connecting it to sales."
+        />
+        <div className="mt-10 grid grid-cols-2 gap-px border border-paper-border bg-paper-border md:grid-cols-3 lg:grid-cols-6">
+          {influencerNumbers.map((n) => (
+            <div key={n.lbl} className="bg-paper px-5 py-6">
+              <div className="font-display text-3xl font-bold tracking-tight text-signal-dim">
+                {n.num}
+              </div>
+              <div className="mt-2 font-mono text-[10.5px] tracking-wide text-paper-muted uppercase">
+                {n.lbl}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-3">
+          {influencerCapabilities.map((c) => (
+            <div key={c.t} className="bg-paper p-6">
+              <h3 className="font-display text-lg font-semibold">{c.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{c.d}</p>
+            </div>
+          ))}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function Entrepreneurship() {
+  return (
+    <section id="entrepreneurship" className="border-b border-border py-20">
+      <Wrap>
+        <SectionHead
+          eyebrow="Entrepreneurial experience"
+          title="E-commerce businesses I've operated myself"
+          lede="Separate from the brand work above: businesses I personally ran. They gave me the commercial understanding behind the marketing — margins, pricing, acquisition cost and what a campaign really contributes."
+        />
+        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2">
+          {entrepreneurial.map((e) => (
+            <div key={e.t} className="bg-background p-6 transition-colors hover:bg-ink-2">
+              <h3 className="font-display text-lg font-semibold">{e.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.d}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap gap-2.5">
+          {["Shopify", "Paid advertising", "Influencer marketing", "Product research", "CRO", "SEO", "Email", "Customer acquisition", "Margins", "Store optimization", "Performance tracking"].map(
+            (t) => (
+              <span
+                key={t}
+                className="border border-border px-3 py-1.5 font-mono text-[11px] text-muted-foreground"
+              >
+                {t}
+              </span>
+            ),
+          )}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function About() {
+  return (
+    <section id="about" className="border-b border-border py-20">
+      <Wrap className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+        <div>
+          <SectionHead
+            eyebrow="About"
+            title="Influencer marketing first, commercial thinking behind it"
+          />
+          <div className="mt-6 space-y-4">
+            {aboutParas.map((p) => (
+              <p key={p} className="text-[15px] leading-relaxed text-muted-foreground">
+                {p}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="mx-auto w-full max-w-xs border border-border bg-ink-2 p-1.5 shadow-[var(--shadow-lift)] sm:max-w-sm">
+          <video
+            src={media.introVideo}
+            controls
+            playsInline
+            preload="metadata"
+            className="max-h-[520px] w-full object-contain"
+          />
+          <div className="px-2 pt-2 pb-1 font-mono text-[11px] text-signal-dim">
+            Short introduction — who I am and what I do
+          </div>
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
 
 export function Intro() {
   return (
