@@ -58,7 +58,7 @@ export const contact = {
 export const tickerItems: Array<[string, string, "up" | "down"]> = [
   ["AVG. ROAS", "4.00x", "up"],
   ["CAC / WASTED SPEND", "-20%", "down"],
-  ["CLIENT REVENUE GROWTH", "+25%", "up"],
+  ["BRAND REVENUE GROWTH", "+25%", "up"],
   ["CUZYMART NET SALES '24", "$52K", "up"],
   ["AVOSILK SALES", "+30%", "up"],
   ["CREATOR NETWORK", "100+", "up"],
@@ -186,7 +186,7 @@ export const platformBreakdown = [
   {
     platform: "Influencer & Affiliate",
     focus: "Trust at scale",
-    body: "Gifted, paid and code-based collabs with tracked discount codes — 50%+ of total client sales at freelance clients came through this channel.",
+    body: "Gifted, paid and code-based collabs with tracked discount codes — 50%+ of total brand sales came through this channel.",
     metrics: ["Code redemptions", "CPM equiv.", "Sales share"],
   },
 ];
@@ -284,7 +284,7 @@ export const engagementSteps = [
 export const cases = [
   {
     id: "decogal",
-    tag: "Case Study — Marketing Manager, 2024",
+    tag: "Case Study — Marketing Management, 2024",
     name: "Decogal",
     pills: ["Home Decor · Egypt", "Meta Ads", "SEO", "Full-Stack Marketing"],
     paras: [
@@ -330,7 +330,7 @@ export const cases = [
   },
   {
     id: "cuzymart",
-    tag: "Case Study — Freelance Growth Consultant, 2024",
+    tag: "Case Study — Influencer & Growth Marketing, 2024",
     name: "CuzyMart",
     pills: ["Wooden Toys · Saudi-Based", "Shopify · DTC", "Meta Ads + Influencer"],
     paras: [
@@ -468,9 +468,9 @@ export const timeline = [
   },
   {
     date: "2022 — 2024",
-    title: "Freelance Marketing Consultant & Shopify Store Designer",
-    role: "Self-Employed · Egypt & Saudi Arabia Clients",
-    body: "Embedded marketing lead for 2 international e-commerce clients — Shopify builds, full-funnel strategy, and an influencer channel that drove 50%+ of total client sales.",
+    title: "Marketing & E-Commerce Experience — Egypt & Saudi Arabia Brands",
+    role: "Influencer Marketing · Paid Media · Shopify",
+    body: "Embedded marketing support for 2 international e-commerce brands — Shopify builds, full-funnel strategy, and an influencer channel that drove 50%+ of total sales.",
   },
   {
     date: "2019 — 2023",
@@ -522,7 +522,7 @@ export const bigNumbers = [
   { num: "25%", lbl: "Faster campaign planning", sub: "One unified calendar replacing three disconnected plans" },
   { num: "30%", lbl: "Sales lift at Avosilk", sub: "Driven by a scored creator engine, not broader targeting" },
   { num: "27.4K", lbl: "Reach on a single creator story", sub: "770 sticker taps on one discount-code story" },
-  { num: "50%+", lbl: "Client sales via influencer channel", sub: "Tracked with per-creator discount codes" },
+  { num: "50%+", lbl: "Brand sales via influencer channel", sub: "Tracked with per-creator discount codes" },
   { num: "8", lbl: "Step media-buying process", sub: "Applied identically to every account I touch" },
   { num: "2", lbl: "Languages, 3 markets", sub: "Arabic & English — Egypt, Saudi Arabia and international brands" },
 ];
