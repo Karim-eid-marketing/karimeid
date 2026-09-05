@@ -509,7 +509,7 @@ export const tools = [
 /* ---------- Added depth: numbers, benchmarks, proof, FAQ ---------- */
 
 export const bigNumbers = [
-  { num: "6+", lbl: "Years in performance marketing", sub: "2018 → today, across affiliate, DTC and agency-style client work" },
+  { num: "6+", lbl: "Years in performance marketing", sub: "2018 → today, across affiliate, DTC brands and e-commerce growth work" },
   { num: "E£180K", lbl: "Ad spend managed at Decogal", sub: "Returned E£720K in tracked revenue — a 4.00x blended ROAS" },
   { num: "E£720K", lbl: "Revenue generated from that spend", sub: "Meta-led, organic and creator content feeding the same funnel" },
   { num: "$52K", lbl: "CuzyMart net sales, FY2024", sub: "Split ~50/50 between influencer-driven and Meta Ads revenue" },
@@ -528,7 +528,7 @@ export const bigNumbers = [
 ];
 
 export const mediaBuyingNumbers = [
-  { k: "Ad spend managed", v: "E£180K+", note: "Decogal 2024, plus owned-store and client budgets" },
+  { k: "Ad spend managed", v: "E£180K+", note: "Decogal 2024, plus owned-store and brand budgets" },
   { k: "Blended ROAS", v: "4.00x", note: "E£180K in → E£720K tracked revenue out" },
   { k: "Break-even ROAS discipline", v: "Set pre-launch", note: "Every account starts with the number the margin can carry" },
   { k: "Creative angles per product", v: "3–5", note: "Own hook, script and format per angle" },
