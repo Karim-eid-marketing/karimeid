@@ -540,49 +540,50 @@ export const mediaBuyingNumbers = [
 
 export const proofPoints = [
   {
-    t: "I've spent my own money on ads",
-    d: "Three Shopify stores I owned and funded myself. When the ROAS drops, it comes out of my pocket — which is exactly why I optimize on contribution margin, not on dashboard metrics.",
+    t: "Influencer marketing is my core specialization",
+    d: "Creator discovery, vetting, outreach, negotiation and relationship management across 100+ creators and 10+ macro collaborations — with campaign results tracked to sales, not to impressions.",
   },
   {
     t: "Every screenshot on this page is real",
-    d: "Ad manager builds, Shopify order flows, margin sheets, creator vetting trackers, story insights. Nothing mocked up, only names and contacts redacted.",
+    d: "Ad manager builds, Shopify order flows, margin sheets, creator vetting trackers and story insights from real brand work. Nothing mocked up; only names and contact details are redacted.",
   },
   {
-    t: "I replace three hires",
-    d: "Media buyer, influencer manager and store/CRO owner — running from one calendar, so paid, creators, SEO and content never contradict each other.",
+    t: "Cross-functional marketing experience",
+    d: "One marketer with hands-on experience across creators, performance marketing and e-commerce growth — so influencer, paid, SEO and content work from one plan instead of contradicting each other.",
   },
   {
-    t: "You get the system, not just the service",
-    d: "Documented processes: 8-step media buying, 6-pillar SEO plan, 4-check creator vetting, margin model per SKU. It stays in your business after the engagement ends.",
+    t: "Documented, repeatable systems",
+    d: "A 4-check creator vetting model, an 8-step media buying process, a 6-pillar SEO plan and a per-SKU margin model — processes a team can adopt, not knowledge locked in one head.",
   },
 ];
 
 export const faqs = [
   {
-    q: "What's the fastest thing you could fix in my account?",
-    a: "Usually spend allocation. In week one I map every campaign to its true break-even ROAS and cut what can't clear it — that's where the 20% of wasted spend at Decogal came from, without touching revenue.",
+    q: "What kind of role are you looking for?",
+    a: "A full-time marketing role where influencer and creator partnerships are a core part of the job — influencer marketing manager, creator partnerships, or a growth/performance marketing role with a strong creator component.",
   },
   {
-    q: "Do you only do paid media?",
-    a: "No. Media buying is the core, but it's paired with creator sourcing and negotiation, SEO, content direction, Shopify storefront design and CRO. Same operator, one calendar.",
+    q: "What is your strongest area?",
+    a: "Influencer and creator marketing: discovery, vetting, outreach, negotiation, campaign coordination, UGC and turning creator partnerships into tracked sales. Paid media, Shopify CRO, SEO and email support that core.",
   },
   {
-    q: "What budgets have you handled?",
-    a: "From $150/day test builds up to E£180K in managed annual spend, plus self-funded budgets on my own stores. The process is the same at every level — margin first, evidence second.",
+    q: "How do you measure influencer campaigns?",
+    a: "Per-creator discount codes and links, code redemptions, reach and engagement, sales share and cost per acquired customer — so each creator is judged on contribution, not follower count.",
   },
   {
-    q: "Full-time role or freelance retainer?",
-    a: "Both work. Whether it's a marketing manager role or a growth retainer, the first 30 days follow the same audit → plan → build → scale sequence.",
+    q: "How do you find and vet creators?",
+    a: "Niche and market-based sourcing, then four checks before outreach: audience gender split, engagement rate, third-party audit score and real-audience percentage. Everything is logged in a structured creator database.",
   },
   {
-    q: "How do you report?",
-    a: "Weekly ROAS, CAC, AOV, CTR and CPM with the decisions attached — what was killed, what was scaled and why — plus a monthly strategy review against revenue.",
+    q: "Which markets and languages do you work in?",
+    a: "Egypt and Saudi Arabia natively, plus US and EU DTC audiences through creator work and my own stores. Bilingual in Arabic and English.",
   },
   {
-    q: "Which markets do you know best?",
-    a: "Egypt and Saudi Arabia natively, plus US/EU DTC audiences from my own stores and creator network. Bilingual in Arabic and English.",
+    q: "How do you work inside a team?",
+    a: "Weekly reporting on the metrics that matter — creator performance, ROAS, CAC, AOV, CTR — with the decisions attached, plus a monthly review against revenue. I document processes so colleagues can run them too.",
   },
 ];
+
 
 /* ---------- Full-time positioning layer ---------- */
 
