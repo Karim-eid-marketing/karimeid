@@ -701,9 +701,9 @@ export function Work() {
     <section id="work" className="border-b border-border py-20">
       <Wrap>
         <SectionHead
-          eyebrow="Case studies"
-          title="Three brands, three growth engines"
-          lede="Real screenshots below, shown in full; customer names and creator contact details are redacted for privacy. Nothing is staged."
+          eyebrow="Selected work"
+          title="Case studies: challenge, strategy, execution, results"
+          lede="Marketing work I owned for three e-commerce brands, with the real screenshots behind it. Customer names and creator contact details are redacted for privacy."
         />
 
         <div className="mt-12 space-y-10">
@@ -768,6 +768,9 @@ export function Work() {
                       ))}
                     </ul>
 
+                    <div className="mb-2 font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Results
+                    </div>
                     <div className="grid gap-px border border-border bg-border sm:grid-cols-3">
                       {c.stats.map((s) => (
                         <div key={s.lbl} className="bg-background p-4">
