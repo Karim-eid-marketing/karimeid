@@ -1023,11 +1023,11 @@ export function Footer() {
   return (
     <footer id="contact" className="hero-aura border-t border-border pt-20 pb-10">
       <Wrap>
-        <Eyebrow>Let's talk</Eyebrow>
+        <Eyebrow>Contact</Eyebrow>
         <h2 className="mt-5 max-w-3xl font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-5xl">
-          Have a Shopify brand that needs{" "}
+          Looking for a full-time growth marketer who can{" "}
           <em className="text-signal not-italic">
-            paid, creators, SEO and content pulling the same direction?
+            own creators, paid media and e-commerce results?
           </em>
         </h2>
         <div className="mt-9 flex flex-wrap gap-3">
@@ -1073,7 +1073,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-8 font-mono text-[11px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} Karim Eid — Performance &amp; Influencer Marketing</p>
+          <p>© {new Date().getFullYear()} Karim Eid — E-commerce &amp; DTC Growth Marketer</p>
           <p>Cairo · Riyadh · Remote — Arabic &amp; English</p>
         </div>
       </Wrap>
