@@ -731,12 +731,30 @@ export function Work() {
 
                 <div className="grid gap-8 p-6 lg:grid-cols-[1fr_1.05fr]">
                   <div>
-                    {c.paras.map((p) => (
-                      <p key={p} className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
-                        {p}
-                      </p>
-                    ))}
+                    {caseTakeaways[c.id] ? (
+                      <div className="mb-5 border border-border p-4">
+                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                          Challenge
+                        </div>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          {caseTakeaways[c.id]!.challenge}
+                        </p>
+                      </div>
+                    ) : null}
+                    <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Strategy
+                    </div>
+                    <div className="mt-2">
+                      {c.paras.map((p) => (
+                        <p key={p} className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
+                          {p}
+                        </p>
+                      ))}
+                    </div>
 
+                    <div className="mt-2 font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Execution
+                    </div>
                     <ul className="my-6 space-y-3">
                       {c.list.map((l) => (
                         <li key={l.b} className="flex gap-3">
