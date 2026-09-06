@@ -145,12 +145,10 @@ export function Ticker() {
 }
 
 const navLinks = [
-  ["#numbers", "Key Results"],
-  ["#brands", "Brand Experience"],
-  ["#influencer", "Influencer Marketing"],
-  ["#work", "Case Studies"],
-  ["#proof", "Creator Proof"],
-  ["#entrepreneurship", "Entrepreneurship"],
+  ["#top", "Home"],
+  ["#work", "Work"],
+  ["#results", "Results"],
+  ["#experience", "Experience"],
   ["#skills", "Skills"],
   ["#about", "About"],
   ["#contact", "Contact"],
