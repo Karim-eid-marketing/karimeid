@@ -821,8 +821,8 @@ export function CreatorProof() {
         <SectionHead
           paper
           eyebrow="Creator proof"
-          title="Real collabs, not a highlight reel"
-          lede="These are brands I built and scaled myself — Jewlera, Poochycat and Porlarisa. I scaled each one using Meta Ads, collaborated with over 10 macro and big influencers, designed the web storefronts, created the packaging, and ran the e-commerce operations end to end. Everything below is the influencer-network side of that engine."
+          title="Real collaborations, not a highlight reel"
+          lede="Creator campaigns I ran for Jewlera, Poochycat and Porlarisa — sourcing and vetting the creators, negotiating the collabs, briefing the content and tracking what each partnership returned. Storefront, packaging and e-commerce work supported the same campaigns."
         />
         {creatorGalleries.map((g) => (
           <div key={g.brand} className="mt-12">
@@ -903,9 +903,9 @@ export function Experience() {
       <Wrap>
         <SectionHead
           paper
-          eyebrow="Track record"
-          title="Six years, three storefronts, one thread"
-          lede="From running three of my own Shopify stores solo to managing paid media and influencer budgets for other brands."
+          eyebrow="Career timeline"
+          title="Roles, companies and marketing ownership"
+          lede="Where I've worked, what I was responsible for, and the results that came out of it."
         />
         <div className="mt-12 ml-1.5 border-l border-paper-border">
           {timeline.map((t) => (
