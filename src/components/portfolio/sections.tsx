@@ -197,28 +197,31 @@ export function Hero() {
               Open to full-time opportunities
             </div>
             <h1 className="font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
-              Influencer &amp; Creator{" "}
-              <em className="text-signal not-italic">Marketing Specialist</em>
+              Karim Eid — E-commerce &amp; DTC{" "}
+              <em className="text-signal not-italic">Growth Marketer</em>
             </h1>
+            <p className="mt-4 font-mono text-[12px] tracking-wider text-signal uppercase">
+              Influencer &amp; Performance Marketing | Paid Media | Shopify | CRO
+            </p>
             <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-muted-foreground">
-              Influencer partnerships, creator outreach, UGC and performance-driven e-commerce
-              growth. Hands-on experience working with brands including Jewlera, Poochy Cat,
-              Porlarisa, Decogal, CuzyMart and Avosilk — 100+ creators sourced and vetted, 10+ macro
-              collaborations, and measurable e-commerce results. Supported by paid media, Shopify
-              CRO, SEO and email experience. Cairo, Egypt — Arabic &amp; English.
+              I own growth outcomes for e-commerce and DTC brands — connecting creator partnerships,
+              paid media and Shopify conversion work into one plan measured on ROAS, CAC and
+              revenue. Marketing experience across Decogal, CuzyMart, Avosilk, Jewlera, Poochy Cat
+              and Porlarisa. Cairo, Egypt — Arabic &amp; English.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#brands"
+                href="#work"
                 className="bg-signal px-5 py-3 font-mono text-xs tracking-wider text-primary-foreground uppercase shadow-[var(--shadow-signal)] transition-transform hover:-translate-y-0.5"
               >
-                View my experience →
+                View my work →
               </a>
               <a
-                href="#work"
+                href="/Karim-Eid-Resume.pdf"
+                download
                 className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
               >
-                View case studies
+                Download resume
               </a>
               <a
                 href={contact.linkedin}
@@ -231,12 +234,11 @@ export function Hero() {
             </div>
             <div className="mt-7 flex flex-wrap gap-2">
               {[
-                "Influencer Marketing",
-                "Creator Partnerships",
-                "Creator Outreach",
-                "UGC",
-                "Affiliate & Creator Programs",
-                "E-Commerce Growth",
+                "4x ROAS",
+                "100+ creators",
+                "50%+ creator-driven sales",
+                "20% CAC / CPA reduction",
+                "30% traffic & revenue growth",
               ].map((t) => (
                 <span
                   key={t}
