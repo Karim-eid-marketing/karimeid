@@ -942,28 +942,6 @@ export function Experience() {
   );
 }
 
-export function HowIWork() {
-  return (
-    <section id="process" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="How we'd work together"
-          title="From audit to scale in four moves"
-          lede="Whether it's a full-time role or a retainer, the first 30 days look the same — diagnose the leaks, then build the system."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
-          {engagementSteps.map((s) => (
-            <div key={s.n} className="bg-background p-6">
-              <div className="font-mono text-[11px] text-signal">{s.n}</div>
-              <h3 className="mt-3 font-display text-lg font-semibold">{s.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-            </div>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
 
 export function WhyMe() {
   return (
@@ -971,8 +949,8 @@ export function WhyMe() {
       <Wrap>
         <SectionHead
           paper
-          eyebrow="Why me"
-          title="What you get that a job title can't show"
+          eyebrow="Strengths"
+          title="What I bring to a marketing team"
         />
         <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2">
           {proofPoints.map((p) => (
@@ -993,8 +971,8 @@ export function Faq() {
       <Wrap>
         <SectionHead
           eyebrow="FAQ"
-          title="The questions I'd ask before hiring me"
-          lede="Straight answers on budgets, scope, reporting and fit — the same answers I'd give you on the first call."
+          title="What hiring teams usually ask me"
+          lede="Straight answers on the role I'm looking for, how I measure work and how I operate inside a marketing team."
         />
         <div className="mt-12 space-y-3">
           {faqs.map((f) => (
