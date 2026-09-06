@@ -740,3 +740,48 @@ export const aboutParas = [
   "I have also operated my own e-commerce businesses, which gives me a strong understanding of the commercial side of marketing: margins, break-even ROAS, pricing and what a campaign actually contributes to the business.",
   "I'm now looking to bring that experience into a full-time marketing team, where I can own influencer and creator partnerships and support wider growth work day to day.",
 ];
+
+/* ---------- Skill groups (career-focused) ---------- */
+export const skillGroups = [
+  {
+    t: "Growth / Performance",
+    items: ["Paid Media", "Meta Ads", "TikTok Ads", "Google Ads", "ROAS", "CAC / CPA", "A/B Testing", "Budget Allocation"],
+  },
+  {
+    t: "Influencer & Creator",
+    items: ["Creator Sourcing", "Outreach", "Vetting", "UGC", "Affiliate Marketing", "Creator ROI Tracking", "Negotiation"],
+  },
+  {
+    t: "E-commerce",
+    items: ["Shopify", "CRO", "Checkout Optimization", "Product Research", "DTC Strategy", "Merchandising", "Margin Modelling"],
+  },
+  {
+    t: "Content & Organic",
+    items: ["Content Strategy", "Social Media", "Organic Growth", "Social SEO", "SEO", "Email & Outreach"],
+  },
+  {
+    t: "Analytics & Strategy",
+    items: ["KPI Reporting", "Google Analytics", "Search Console", "Market Research", "Competitive Analysis", "GTM Strategy"],
+  },
+];
+
+export const caseTakeaways: Record<string, { challenge: string; takeaway: string }> = {
+  decogal: {
+    challenge:
+      "A decor marketplace with spend spread across disconnected organic, influencer and paid plans, and no clear read on which activity was returning revenue.",
+    takeaway:
+      "When one owner runs creative direction, creators and media buying from a single calendar, spend efficiency improves before budgets ever increase.",
+  },
+  cuzymart: {
+    challenge:
+      "A new Saudi-based toy catalogue with 30+ SKUs, no proven winners, and thin margins on part of the range — budget could not be spread evenly.",
+    takeaway:
+      "Margin data, not gut feel, should decide which products get paid budget; the rest earn their place through creators and organic first.",
+  },
+  avosilk: {
+    challenge:
+      "A DTC sleepwear brand that needed reach and trust fast, without wasting product and budget on creators with inflated audiences.",
+    takeaway:
+      "A four-check vetting model turns influencer spend from a gamble into a predictable acquisition channel.",
+  },
+};

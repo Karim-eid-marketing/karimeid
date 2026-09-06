@@ -1,20 +1,26 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
+  aboutParas,
   bigNumbers,
+  brandExperience,
+  caseTakeaways,
   cases,
   contact,
   creatorGalleries,
   ecomKpis,
   ecomStack,
-  engagementSteps,
+  entrepreneurial,
   faqs,
   heroStats,
+  influencerCapabilities,
+  influencerNumbers,
   media,
   mediaBuyingNumbers,
   mediaBuyingSteps,
   platformBreakdown,
   proofPoints,
   seoPillars,
+  skillGroups,
   skills,
   tickerItems,
   timeline,
@@ -139,12 +145,10 @@ export function Ticker() {
 }
 
 const navLinks = [
-  ["#numbers", "Key Results"],
-  ["#brands", "Brand Experience"],
-  ["#influencer", "Influencer Marketing"],
-  ["#work", "Case Studies"],
-  ["#proof", "Creator Proof"],
-  ["#entrepreneurship", "Entrepreneurship"],
+  ["#top", "Home"],
+  ["#work", "Work"],
+  ["#results", "Results"],
+  ["#experience", "Experience"],
   ["#skills", "Skills"],
   ["#about", "About"],
   ["#contact", "Contact"],
@@ -193,28 +197,31 @@ export function Hero() {
               Open to full-time opportunities
             </div>
             <h1 className="font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
-              Influencer &amp; Creator{" "}
-              <em className="text-signal not-italic">Marketing Specialist</em>
+              Karim Eid — E-commerce &amp; DTC{" "}
+              <em className="text-signal not-italic">Growth Marketer</em>
             </h1>
+            <p className="mt-4 font-mono text-[12px] tracking-wider text-signal uppercase">
+              Influencer &amp; Performance Marketing | Paid Media | Shopify | CRO
+            </p>
             <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-muted-foreground">
-              Influencer partnerships, creator outreach, UGC and performance-driven e-commerce
-              growth. Hands-on experience working with brands including Jewlera, Poochy Cat,
-              Porlarisa, Decogal, CuzyMart and Avosilk — 100+ creators sourced and vetted, 10+ macro
-              collaborations, and measurable e-commerce results. Supported by paid media, Shopify
-              CRO, SEO and email experience. Cairo, Egypt — Arabic &amp; English.
+              I own growth outcomes for e-commerce and DTC brands — connecting creator partnerships,
+              paid media and Shopify conversion work into one plan measured on ROAS, CAC and
+              revenue. Marketing experience across Decogal, CuzyMart, Avosilk, Jewlera, Poochy Cat
+              and Porlarisa. Cairo, Egypt — Arabic &amp; English.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#brands"
+                href="#work"
                 className="bg-signal px-5 py-3 font-mono text-xs tracking-wider text-primary-foreground uppercase shadow-[var(--shadow-signal)] transition-transform hover:-translate-y-0.5"
               >
-                View my experience →
+                View my work →
               </a>
               <a
-                href="#work"
+                href="/Karim-Eid-Resume.pdf"
+                download
                 className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
               >
-                View case studies
+                Download resume
               </a>
               <a
                 href={contact.linkedin}
@@ -227,12 +234,11 @@ export function Hero() {
             </div>
             <div className="mt-7 flex flex-wrap gap-2">
               {[
-                "Influencer Marketing",
-                "Creator Partnerships",
-                "Creator Outreach",
-                "UGC",
-                "Affiliate & Creator Programs",
-                "E-Commerce Growth",
+                "4x ROAS",
+                "100+ creators",
+                "50%+ creator-driven sales",
+                "20% CAC / CPA reduction",
+                "30% traffic & revenue growth",
               ].map((t) => (
                 <span
                   key={t}
@@ -695,9 +701,9 @@ export function Work() {
     <section id="work" className="border-b border-border py-20">
       <Wrap>
         <SectionHead
-          eyebrow="Case studies"
-          title="Three brands, three growth engines"
-          lede="Real screenshots below, shown in full; customer names and creator contact details are redacted for privacy. Nothing is staged."
+          eyebrow="Selected work"
+          title="Case studies: challenge, strategy, execution, results"
+          lede="Marketing work I owned for three e-commerce brands, with the real screenshots behind it. Customer names and creator contact details are redacted for privacy."
         />
 
         <div className="mt-12 space-y-10">
@@ -725,12 +731,30 @@ export function Work() {
 
                 <div className="grid gap-8 p-6 lg:grid-cols-[1fr_1.05fr]">
                   <div>
-                    {c.paras.map((p) => (
-                      <p key={p} className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
-                        {p}
-                      </p>
-                    ))}
+                    {caseTakeaways[c.id] ? (
+                      <div className="mb-5 border border-border p-4">
+                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                          Challenge
+                        </div>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          {caseTakeaways[c.id]!.challenge}
+                        </p>
+                      </div>
+                    ) : null}
+                    <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Strategy
+                    </div>
+                    <div className="mt-2">
+                      {c.paras.map((p) => (
+                        <p key={p} className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
+                          {p}
+                        </p>
+                      ))}
+                    </div>
 
+                    <div className="mt-2 font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Execution
+                    </div>
                     <ul className="my-6 space-y-3">
                       {c.list.map((l) => (
                         <li key={l.b} className="flex gap-3">
@@ -744,6 +768,9 @@ export function Work() {
                       ))}
                     </ul>
 
+                    <div className="mb-2 font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Results
+                    </div>
                     <div className="grid gap-px border border-border bg-border sm:grid-cols-3">
                       {c.stats.map((s) => (
                         <div key={s.lbl} className="bg-background p-4">
@@ -791,6 +818,17 @@ export function Work() {
                         </table>
                       </div>
                     ) : null}
+
+                    {caseTakeaways[c.id] ? (
+                      <div className="mt-6 border-l-2 border-signal bg-ink-2 p-4">
+                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                          Key takeaway
+                        </div>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          {caseTakeaways[c.id]!.takeaway}
+                        </p>
+                      </div>
+                    ) : null}
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
@@ -815,8 +853,8 @@ export function CreatorProof() {
         <SectionHead
           paper
           eyebrow="Creator proof"
-          title="Real collabs, not a highlight reel"
-          lede="These are brands I built and scaled myself — Jewlera, Poochycat and Porlarisa. I scaled each one using Meta Ads, collaborated with over 10 macro and big influencers, designed the web storefronts, created the packaging, and ran the e-commerce operations end to end. Everything below is the influencer-network side of that engine."
+          title="Real collaborations, not a highlight reel"
+          lede="Creator campaigns I ran for Jewlera, Poochycat and Porlarisa — sourcing and vetting the creators, negotiating the collabs, briefing the content and tracking what each partnership returned. Storefront, packaging and e-commerce work supported the same campaigns."
         />
         {creatorGalleries.map((g) => (
           <div key={g.brand} className="mt-12">
@@ -897,9 +935,9 @@ export function Experience() {
       <Wrap>
         <SectionHead
           paper
-          eyebrow="Track record"
-          title="Six years, three storefronts, one thread"
-          lede="From running three of my own Shopify stores solo to managing paid media and influencer budgets for other brands."
+          eyebrow="Career timeline"
+          title="Roles, companies and marketing ownership"
+          lede="Where I've worked, what I was responsible for, and the results that came out of it."
         />
         <div className="mt-12 ml-1.5 border-l border-paper-border">
           {timeline.map((t) => (
@@ -936,28 +974,6 @@ export function Experience() {
   );
 }
 
-export function HowIWork() {
-  return (
-    <section id="process" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="How we'd work together"
-          title="From audit to scale in four moves"
-          lede="Whether it's a full-time role or a retainer, the first 30 days look the same — diagnose the leaks, then build the system."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
-          {engagementSteps.map((s) => (
-            <div key={s.n} className="bg-background p-6">
-              <div className="font-mono text-[11px] text-signal">{s.n}</div>
-              <h3 className="mt-3 font-display text-lg font-semibold">{s.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-            </div>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
 
 export function WhyMe() {
   return (
@@ -965,8 +981,8 @@ export function WhyMe() {
       <Wrap>
         <SectionHead
           paper
-          eyebrow="Why me"
-          title="What you get that a job title can't show"
+          eyebrow="Strengths"
+          title="What I bring to a marketing team"
         />
         <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2">
           {proofPoints.map((p) => (
@@ -987,8 +1003,8 @@ export function Faq() {
       <Wrap>
         <SectionHead
           eyebrow="FAQ"
-          title="The questions I'd ask before hiring me"
-          lede="Straight answers on budgets, scope, reporting and fit — the same answers I'd give you on the first call."
+          title="What hiring teams usually ask me"
+          lede="Straight answers on the role I'm looking for, how I measure work and how I operate inside a marketing team."
         />
         <div className="mt-12 space-y-3">
           {faqs.map((f) => (
@@ -1017,11 +1033,11 @@ export function Footer() {
   return (
     <footer id="contact" className="hero-aura border-t border-border pt-20 pb-10">
       <Wrap>
-        <Eyebrow>Let's talk</Eyebrow>
+        <Eyebrow>Contact</Eyebrow>
         <h2 className="mt-5 max-w-3xl font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-5xl">
-          Have a Shopify brand that needs{" "}
+          Looking for a full-time growth marketer who can{" "}
           <em className="text-signal not-italic">
-            paid, creators, SEO and content pulling the same direction?
+            own creators, paid media and e-commerce results?
           </em>
         </h2>
         <div className="mt-9 flex flex-wrap gap-3">
@@ -1067,7 +1083,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-8 font-mono text-[11px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} Karim Eid — Performance &amp; Influencer Marketing</p>
+          <p>© {new Date().getFullYear()} Karim Eid — E-commerce &amp; DTC Growth Marketer</p>
           <p>Cairo · Riyadh · Remote — Arabic &amp; English</p>
         </div>
       </Wrap>
