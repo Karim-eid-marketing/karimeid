@@ -797,6 +797,17 @@ export function Work() {
                         </table>
                       </div>
                     ) : null}
+
+                    {caseTakeaways[c.id] ? (
+                      <div className="mt-6 border-l-2 border-signal bg-ink-2 p-4">
+                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                          Key takeaway
+                        </div>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          {caseTakeaways[c.id]!.takeaway}
+                        </p>
+                      </div>
+                    ) : null}
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
