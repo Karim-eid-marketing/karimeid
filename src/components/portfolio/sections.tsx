@@ -197,17 +197,18 @@ export function Hero() {
               Open to full-time opportunities
             </div>
             <h1 className="font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
-              Karim Eid — E-commerce &amp; DTC{" "}
-              <em className="text-signal not-italic">Growth Marketer</em>
+              Karim Eid — Influencer &amp;{" "}
+              <em className="text-signal not-italic">Creator Marketing Specialist</em>
             </h1>
             <p className="mt-4 font-mono text-[12px] tracking-wider text-signal uppercase">
-              Influencer &amp; Performance Marketing | Paid Media | Shopify | CRO
+              E-Commerce &amp; DTC Growth Marketer | Paid Media | Shopify | CRO
             </p>
             <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-muted-foreground">
-              I own growth outcomes for e-commerce and DTC brands — connecting creator partnerships,
-              paid media and Shopify conversion work into one plan measured on ROAS, CAC and
-              revenue. Marketing experience across Decogal, CuzyMart, Avosilk, Jewlera, Poochy Cat
-              and Porlarisa. Cairo, Egypt — Arabic &amp; English.
+              6+ years scaling Shopify brands through a 100+ creator network that drove 50%+ of
+              client sales, paired with paid media (Meta, TikTok, Google Ads) at a 4x average ROAS
+              and a 20% reduction in CAC. Owned influencer strategy end-to-end — sourcing, vetting,
+              outreach, negotiation and ROI tracking — across Egypt, Saudi Arabia and international
+              markets. Bilingual (Arabic/English), set up for async remote work with US and EU teams.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a

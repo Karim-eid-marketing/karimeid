@@ -74,7 +74,7 @@ export const heroStats = [
   { num: "$52K", lbl: "Net sales, CuzyMart '24" },
   { num: "100+", lbl: "Vetted creators" },
   { num: "20%", lbl: "CAC / waste reduction" },
-  { num: "25%", lbl: "Faster campaign planning" },
+  { num: "+25%", lbl: "Client revenue growth, Decogal" },
 ];
 
 export const skills = [
@@ -464,7 +464,7 @@ export const timeline = [
     date: "2024",
     title: "Decogal",
     role: "Marketing Manager · Home Decor E-Commerce",
-    body: "End-to-end digital strategy, content calendar and Meta Ads budget — 4x ROAS, 20% less wasted spend, 25% faster campaign planning.",
+    body: "Owned end-to-end DTC marketing strategy, content calendar and paid media budget; directed influencer partnerships feeding Meta creative testing — 20% less wasted ad spend and a 25% increase in client revenue.",
   },
   {
     date: "2022 — 2024",
