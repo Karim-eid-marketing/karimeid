@@ -21,9 +21,9 @@ import {
   Work,
 } from "@/components/portfolio/sections";
 
-const title = "Karim Eid — E-commerce & DTC Growth Marketer";
+const title = "Karim Eid — Influencer & Creator Marketing Specialist | DTC Growth";
 const description =
-  "E-commerce & DTC growth marketer: influencer & performance marketing, paid media, Shopify and CRO. 4x ROAS, 100+ creators, 20% lower CAC, 30% revenue growth.";
+  "Influencer & creator marketing specialist and e-commerce/DTC growth marketer: 100+ creator network driving 50%+ of client sales, 4x avg ROAS, 20% lower CAC. Shopify, paid media, CRO.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Karim Eid",
-          jobTitle: "E-commerce & DTC Growth Marketer",
+          jobTitle: "Influencer & Creator Marketing Specialist | E-Commerce & DTC Growth Marketer",
           email: "mailto:karimeid.work@gmail.com",
           telephone: "+201113166392",
           url: "/",
