@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
+  About,
+  BrandExperience,
   ByTheNumbers,
   CreatorProof,
   Ecommerce,
@@ -7,7 +9,7 @@ import {
   Faq,
   Footer,
   Hero,
-  HowIWork,
+  InfluencerExperience,
   Intro,
   Nav,
   Now,
@@ -19,9 +21,9 @@ import {
   Work,
 } from "@/components/portfolio/sections";
 
-const title = "Karim Eid — Performance & Influencer Marketing for DTC Brands";
+const title = "Karim Eid — E-commerce & DTC Growth Marketer";
 const description =
-  "Performance and influencer marketing specialist: Meta, TikTok & Google Ads, SEO, Shopify e-commerce and a 100+ creator network. 4x avg. ROAS, 20% lower CAC.";
+  "E-commerce & DTC growth marketer: influencer & performance marketing, paid media, Shopify and CRO. 4x ROAS, 100+ creators, 20% lower CAC, 30% revenue growth.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -43,7 +45,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Karim Eid",
-          jobTitle: "Performance & Influencer Marketing Specialist",
+          jobTitle: "E-commerce & DTC Growth Marketer",
           email: "mailto:karimeid.work@gmail.com",
           telephone: "+201113166392",
           url: "/",
@@ -74,6 +76,8 @@ function Index() {
         <Hero />
         <Intro />
         <ByTheNumbers />
+        <BrandExperience />
+        <InfluencerExperience />
         <Skills />
         <PaidMedia />
         <Seo />
@@ -83,7 +87,7 @@ function Index() {
         <WhyMe />
         <Now />
         <Experience />
-        <HowIWork />
+        <About />
         <Faq />
       </main>
       <Footer />
