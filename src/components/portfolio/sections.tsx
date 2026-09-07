@@ -519,10 +519,27 @@ export function Skills() {
       <Wrap>
         <SectionHead
           paper
-          eyebrow="What I run"
-          title="Eight disciplines, one growth loop"
-          lede="Every brand below got the same thing: paid media, creators, SEO and content feeding the same calendar and the same storefront — not three agencies working from three different briefs."
+          eyebrow="Skills"
+          title="What I bring to a growth team"
+          lede="Hands-on across the full DTC growth loop — paid media, creators, storefront and content reporting into one set of numbers."
         />
+        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-3">
+          {skillGroups.map((g) => (
+            <div key={g.t} className="bg-paper p-6">
+              <h3 className="font-display text-lg font-semibold">{g.t}</h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {g.items.map((i) => (
+                  <li
+                    key={i}
+                    className="border border-paper-border px-2.5 py-1 font-mono text-[11px] text-paper-muted"
+                  >
+                    {i}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
         <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-4">
           {skills.map((s) => (
             <div key={s.n} className="group bg-paper p-6 transition-colors hover:bg-[oklch(0.92_0.016_85)]">
@@ -532,6 +549,7 @@ export function Skills() {
             </div>
           ))}
         </div>
+
       </Wrap>
     </section>
   );
