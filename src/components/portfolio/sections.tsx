@@ -1102,7 +1102,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-8 font-mono text-[11px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} Karim Eid — E-commerce &amp; DTC Growth Marketer</p>
+          <p>© {new Date().getFullYear()} Karim Eid — Influencer &amp; Creator Marketing Specialist · E-commerce &amp; DTC Growth</p>
           <p>Cairo · Riyadh · Remote — Arabic &amp; English</p>
         </div>
       </Wrap>
