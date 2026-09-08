@@ -445,18 +445,6 @@ export function About() {
             ))}
           </div>
         </div>
-        <div className="mx-auto w-full max-w-xs border border-border bg-ink-2 p-1.5 shadow-[var(--shadow-lift)] sm:max-w-sm">
-          <video
-            src={media.introVideo}
-            controls
-            playsInline
-            preload="metadata"
-            className="max-h-[520px] w-full object-contain"
-          />
-          <div className="px-2 pt-2 pb-1 font-mono text-[11px] text-signal-dim">
-            Short introduction — who I am and what I do
-          </div>
-        </div>
       </Wrap>
     </section>
   );
