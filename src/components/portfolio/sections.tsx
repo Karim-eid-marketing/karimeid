@@ -1,25 +1,16 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   aboutParas,
-  bigNumbers,
   brandExperience,
-  caseTakeaways,
   cases,
   contact,
   creatorGalleries,
-  ecomKpis,
-  ecomStack,
-  entrepreneurial,
   faqs,
+  heroBadges,
+  heroChips,
   heroStats,
-  influencerCapabilities,
   influencerNumbers,
   media,
-  mediaBuyingNumbers,
-  mediaBuyingSteps,
-  platformBreakdown,
-  proofPoints,
-  seoPillars,
   skillGroups,
   skills,
   tickerItems,
@@ -57,7 +48,7 @@ function SectionHead({
     <div className="max-w-3xl">
       <Eyebrow>{eyebrow}</Eyebrow>
       <h2
-        className={`mt-4 font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-[44px] ${
+        className={`mt-4 font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-[40px] ${
           paper ? "text-paper-foreground" : "text-foreground"
         }`}
       >
@@ -147,7 +138,6 @@ export function Ticker() {
 const navLinks = [
   ["#top", "Home"],
   ["#work", "Work"],
-  ["#results", "Results"],
   ["#experience", "Experience"],
   ["#skills", "Skills"],
   ["#about", "About"],
@@ -189,7 +179,7 @@ export function Hero() {
   return (
     <header id="top" className="hero-aura relative overflow-hidden border-b border-border">
       <div className="hairline-grid pointer-events-none absolute inset-0 opacity-[0.35]" />
-      <Wrap className="relative py-16 md:py-24">
+      <Wrap className="relative py-16 md:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_1fr]">
           <div>
             <div className="mb-5 inline-flex items-center gap-2 border border-signal/50 bg-signal/10 px-3 py-1.5 font-mono text-[11px] tracking-wider text-signal uppercase">
@@ -197,18 +187,16 @@ export function Hero() {
               Open to full-time opportunities
             </div>
             <h1 className="font-display text-4xl leading-[1.03] font-bold tracking-tight md:text-6xl">
-              Karim Eid — Influencer &amp;{" "}
-              <em className="text-signal not-italic">Creator Marketing Specialist</em>
+              Karim Eid — Influencer Marketing Manager &{" "}
+              <em className="text-signal not-italic">E-Commerce Growth</em>
             </h1>
             <p className="mt-4 font-mono text-[12px] tracking-wider text-signal uppercase">
-              E-Commerce &amp; DTC Growth Marketer | Paid Media | Shopify | CRO
+              Influencer & Creator Marketing | Paid Media | Shopify | CRO
             </p>
-            <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-muted-foreground">
-              6+ years scaling Shopify brands through a 100+ creator network that drove 50%+ of
-              client sales, paired with paid media (Meta, TikTok, Google Ads) at a 4x average ROAS
-              and a 20% reduction in CAC. Owned influencer strategy end-to-end — sourcing, vetting,
-              outreach, negotiation and ROI tracking — across Egypt, Saudi Arabia and international
-              markets. Bilingual (Arabic/English), set up for async remote work with US and EU teams.
+            <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-muted-foreground">
+              6+ years running influencer and performance marketing across DTC e-commerce brands — a
+              100+ creator network driving 50%+ of sales, up to 4x ROAS on Meta Ads, and 200% organic
+              growth. Cairo-based, bilingual (Arabic/English), open to full-time roles.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -230,17 +218,11 @@ export function Hero() {
                 rel="noopener"
                 className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
               >
-                Connect on LinkedIn
+                LinkedIn
               </a>
             </div>
             <div className="mt-7 flex flex-wrap gap-2">
-              {[
-                "4x ROAS",
-                "100+ creators",
-                "50%+ creator-driven sales",
-                "20% CAC / CPA reduction",
-                "30% traffic & revenue growth",
-              ].map((t) => (
+              {heroBadges.map((t) => (
                 <span
                   key={t}
                   className="border border-signal/40 bg-signal/5 px-3 py-1.5 font-mono text-[10.5px] tracking-wide text-signal uppercase"
@@ -250,16 +232,14 @@ export function Hero() {
               ))}
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
-              {["Paid Media", "Performance Marketing", "Shopify CRO", "SEO", "Social Media", "Email Marketing"].map(
-                (t) => (
-                  <span
-                    key={t}
-                    className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wide text-muted-foreground uppercase"
-                  >
-                    {t}
-                  </span>
-                ),
-              )}
+              {heroChips.map((t) => (
+                <span
+                  key={t}
+                  className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wide text-muted-foreground uppercase"
+                >
+                  {t}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -267,7 +247,7 @@ export function Hero() {
             <div className="absolute -inset-3 bg-[var(--grad-signal)] opacity-15 blur-2xl" />
             <img
               src={media.headshot}
-              alt="Karim Eid, influencer and creator marketing specialist"
+              alt="Karim Eid, influencer marketing manager and e-commerce growth marketer"
               className="relative w-full border border-border object-cover shadow-[var(--shadow-lift)]"
             />
             <div className="relative -mt-px flex items-center justify-between border border-t-0 border-border bg-ink-2 px-4 py-3 font-mono text-[11px] text-muted-foreground">
@@ -280,7 +260,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-px border border-border bg-border md:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-14 grid grid-cols-2 gap-px border border-border bg-border md:grid-cols-3 lg:grid-cols-5">
           {heroStats.map((s) => (
             <div key={s.lbl} className="bg-background px-5 py-6">
               <div className="font-display text-3xl font-bold tracking-tight text-signal">
@@ -297,160 +277,6 @@ export function Hero() {
   );
 }
 
-export function BrandExperience() {
-  return (
-    <section id="brands" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="Professional brand experience"
-          title="Brands I've worked with"
-          lede="Marketing experience with real brands — influencer partnerships, campaign management and e-commerce growth. Each entry shows the brand, the area I worked in, the timeframe and the documented results."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border lg:grid-cols-2">
-          {brandExperience.map((b, i) => (
-            <Reveal key={b.brand} delay={(i % 2) * 60}>
-              <article className="h-full bg-background p-6">
-                <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border pb-4">
-                  <h3 className="font-display text-2xl font-bold tracking-tight">{b.brand}</h3>
-                  <span className="font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase">
-                    {b.note}
-                  </span>
-                </div>
-                <div className="mt-4 font-mono text-[11px] tracking-wider text-signal uppercase">
-                  {b.area}
-                </div>
-                <div className="mt-1 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
-                  Duration: {b.duration}
-                </div>
-
-                <div className="mt-5 font-mono text-[10.5px] tracking-wider text-foreground uppercase">
-                  What I worked on
-                </div>
-                <ul className="mt-2 space-y-1.5">
-                  {b.worked.map((w) => (
-                    <li key={w} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
-                      <span className="text-signal">·</span>
-                      {w}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-5 font-mono text-[10.5px] tracking-wider text-foreground uppercase">
-                  Results
-                </div>
-                <ul className="mt-2 space-y-1.5">
-                  {b.results.map((r) => (
-                    <li key={r} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
-                      <span className="text-signal">→</span>
-                      {r}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-        <p className="mt-6 font-mono text-[11px] leading-relaxed text-muted-foreground">
-          Note: these are marketing engagements and brand collaborations, described exactly as they
-          were — not claimed as full-time employment.
-        </p>
-      </Wrap>
-    </section>
-  );
-}
-
-export function InfluencerExperience() {
-  return (
-    <section id="influencer" className="bg-paper py-20 text-paper-foreground">
-      <Wrap>
-        <SectionHead
-          paper
-          eyebrow="Core specialization"
-          title="Influencer &amp; Creator Marketing Experience"
-          lede="This is the work I know best: finding the right creators, vetting them properly, negotiating the deal, running the campaign and connecting it to sales."
-        />
-        <div className="mt-10 grid grid-cols-2 gap-px border border-paper-border bg-paper-border md:grid-cols-3 lg:grid-cols-6">
-          {influencerNumbers.map((n) => (
-            <div key={n.lbl} className="bg-paper px-5 py-6">
-              <div className="font-display text-3xl font-bold tracking-tight text-signal-dim">
-                {n.num}
-              </div>
-              <div className="mt-2 font-mono text-[10.5px] tracking-wide text-paper-muted uppercase">
-                {n.lbl}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-10 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-3">
-          {influencerCapabilities.map((c) => (
-            <div key={c.t} className="bg-paper p-6">
-              <h3 className="font-display text-lg font-semibold">{c.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{c.d}</p>
-            </div>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-export function Entrepreneurship() {
-  return (
-    <section id="entrepreneurship" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="Entrepreneurial experience"
-          title="E-commerce businesses I've operated myself"
-          lede="Separate from the brand work above: businesses I personally ran. They gave me the commercial understanding behind the marketing — margins, pricing, acquisition cost and what a campaign really contributes."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2">
-          {entrepreneurial.map((e) => (
-            <div key={e.t} className="bg-background p-6 transition-colors hover:bg-ink-2">
-              <h3 className="font-display text-lg font-semibold">{e.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.d}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-8 flex flex-wrap gap-2.5">
-          {["Shopify", "Paid advertising", "Influencer marketing", "Product research", "CRO", "SEO", "Email", "Customer acquisition", "Margins", "Store optimization", "Performance tracking"].map(
-            (t) => (
-              <span
-                key={t}
-                className="border border-border px-3 py-1.5 font-mono text-[11px] text-muted-foreground"
-              >
-                {t}
-              </span>
-            ),
-          )}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-export function About() {
-  return (
-    <section id="about" className="border-b border-border py-20">
-      <Wrap className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-        <div>
-          <SectionHead
-            eyebrow="About"
-            title="Influencer marketing first, commercial thinking behind it"
-          />
-          <div className="mt-6 space-y-4">
-            {aboutParas.map((p) => (
-              <p key={p} className="text-[15px] leading-relaxed text-muted-foreground">
-                {p}
-              </p>
-            ))}
-          </div>
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-
 export function Intro() {
   return (
     <section id="intro" className="border-b border-border py-20">
@@ -459,7 +285,7 @@ export function Intro() {
           <SectionHead
             eyebrow="Meet Karim"
             title="60 seconds, straight from me."
-            lede="Who I am, what I do, and why I'd be a good fit for your brand — no script, just the short version."
+            lede="Who I am, what I do, and why I'd be a good fit — no script, just the short version."
           />
         </div>
         <div className="mx-auto w-full max-w-xs border border-border bg-ink-2 p-1.5 shadow-[var(--shadow-lift)] sm:max-w-sm">
@@ -476,8 +302,8 @@ export function Intro() {
       <Wrap className="mt-16">
         <SectionHead
           eyebrow="Ad creatives"
-          title="Meta ad creatives we produced"
-          lede="These are live ad creatives we ran on Meta — built through our creator collabs, from concept and briefing to shooting, editing and testing them as scroll-stopping paid assets."
+          title="Meta ad creatives from our creator collabs"
+          lede="Live ad creatives we ran on Meta — built through creator collaborations, from briefing to testing as paid assets."
         />
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {media.adCreatives.map((src, i) => (
@@ -501,216 +327,14 @@ export function Intro() {
   );
 }
 
-
-export function Skills() {
-  return (
-    <section id="skills" className="bg-paper py-20 text-paper-foreground">
-      <Wrap>
-        <SectionHead
-          paper
-          eyebrow="Skills"
-          title="What I bring to a growth team"
-          lede="Hands-on across the full DTC growth loop — paid media, creators, storefront and content reporting into one set of numbers."
-        />
-        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-3">
-          {skillGroups.map((g) => (
-            <div key={g.t} className="bg-paper p-6">
-              <h3 className="font-display text-lg font-semibold">{g.t}</h3>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {g.items.map((i) => (
-                  <li
-                    key={i}
-                    className="border border-paper-border px-2.5 py-1 font-mono text-[11px] text-paper-muted"
-                  >
-                    {i}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2 lg:grid-cols-4">
-          {skills.map((s) => (
-            <div key={s.n} className="group bg-paper p-6 transition-colors hover:bg-[oklch(0.92_0.016_85)]">
-              <div className="font-mono text-[11px] text-signal-dim">{s.n}</div>
-              <h3 className="mt-3 font-display text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{s.body}</p>
-            </div>
-          ))}
-        </div>
-
-      </Wrap>
-    </section>
-  );
-}
-
-export function PaidMedia() {
-  return (
-    <section id="paid" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="Paid media expertise"
-          title="An 8-step media buying process, not a boosted post"
-          lede="Meta, TikTok and Google Ads run the same way every time: margin first, research second, creative third — and budget only moves on evidence."
-        />
-
-        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-          {mediaBuyingSteps.map((s, i) => (
-            <Reveal key={s.n} delay={i * 40}>
-              <div className="h-full bg-background p-6 transition-colors hover:bg-ink-2">
-                <div className="font-mono text-[11px] text-signal">{s.n}</div>
-                <h3 className="mt-3 font-display text-base font-semibold">{s.t}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {platformBreakdown.map((p) => (
-            <div key={p.platform} className="surface-ink p-6">
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-display text-xl font-semibold">{p.platform}</h3>
-                <span className="font-mono text-[11px] tracking-wide text-signal uppercase">
-                  {p.focus}
-                </span>
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.metrics.map((m) => (
-                  <span
-                    key={m}
-                    className="border border-border px-2.5 py-1 font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase"
-                  >
-                    {m}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-12">
-          <Eyebrow>Media buying scoreboard</Eyebrow>
-          <h3 className="mt-3 font-display text-2xl font-semibold">The numbers behind the process</h3>
-          <div className="mt-6 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-            {mediaBuyingNumbers.map((m) => (
-              <div key={m.k} className="bg-background p-5 transition-colors hover:bg-ink-2">
-                <div className="font-mono text-[10.5px] tracking-wider text-muted-foreground uppercase">
-                  {m.k}
-                </div>
-                <div className="mt-2 font-display text-2xl font-bold tracking-tight text-signal">
-                  {m.v}
-                </div>
-                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{m.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-export function ByTheNumbers() {
-  return (
-    <section id="numbers" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="By the numbers"
-          title="Sixteen receipts, zero adjectives"
-          lede="Every claim on this page has a number behind it — ad spend managed, revenue returned, SKUs modelled, creators vetted. This is the full ledger."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-          {bigNumbers.map((n, i) => (
-            <Reveal key={n.lbl} delay={(i % 4) * 50}>
-              <div className="h-full bg-background p-5 transition-colors hover:bg-ink-2">
-                <div className="font-display text-3xl font-bold tracking-tight text-signal">
-                  {n.num}
-                </div>
-                <div className="mt-2 font-mono text-[11px] tracking-wide text-foreground uppercase">
-                  {n.lbl}
-                </div>
-                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{n.sub}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-export function Seo() {
-  return (
-    <section id="seo" className="bg-paper py-20 text-paper-foreground">
-      <Wrap>
-        <SectionHead
-          paper
-          eyebrow="SEO & organic discovery"
-          title="Traffic that keeps arriving after the ads are paused"
-          lede="Search and social SEO are planned inside the same marketing calendar as paid — documented as an action plan with owners, priorities and measurable outcomes."
-        />
-        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border md:grid-cols-2 lg:grid-cols-3">
-          {seoPillars.map((p, i) => (
-            <div key={p.t} className="bg-paper p-6">
-              <div className="font-mono text-[11px] text-signal-dim">
-                {String(i + 1).padStart(2, "0")}
-              </div>
-              <h3 className="mt-3 font-display text-lg font-semibold">{p.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{p.d}</p>
-            </div>
-          ))}
-        </div>
-        <p className="mt-8 max-w-3xl border-l-2 border-signal pl-4 text-sm text-paper-muted">
-          Across my own Shopify stores, TikTok organic and social-search strategy drove qualified
-          traffic with zero ad spend — the same organic-first approach later applied to client
-          brands.
-        </p>
-      </Wrap>
-    </section>
-  );
-}
-
-export function Ecommerce() {
-  return (
-    <section id="ecommerce" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="E-commerce operating system"
-          title="I've owned the P&amp;L, not just the ad account"
-          lede="Three of my own Shopify stores, plus builds and growth for clients in Egypt and Saudi Arabia — product research to fulfilment, priced for profit before a single ad runs."
-        />
-        <div className="mt-12 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
-          {ecomStack.map((s) => (
-            <div key={s.t} className="bg-background p-6 transition-colors hover:bg-ink-2">
-              <h3 className="font-display text-lg font-semibold">{s.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-10 flex flex-wrap gap-3">
-          {ecomKpis.map((k) => (
-            <div key={k.k} className="surface-ink px-4 py-3">
-              <div className="font-display text-sm font-semibold text-signal">{k.k}</div>
-              <div className="font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase">
-                {k.v}
-              </div>
-            </div>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
 export function Work() {
   return (
     <section id="work" className="border-b border-border py-20">
       <Wrap>
         <SectionHead
           eyebrow="Selected work"
-          title="Case studies: challenge, strategy, execution, results"
-          lede="Marketing work I owned for three e-commerce brands, with the real screenshots behind it. Customer names and creator contact details are redacted for privacy."
+          title="Case studies: challenge, actions, results"
+          lede="Marketing work I owned for e-commerce brands, with the real screenshots behind it. Customer names and creator contact details are redacted."
         />
 
         <div className="mt-12 space-y-10">
@@ -738,39 +362,25 @@ export function Work() {
 
                 <div className="grid gap-8 p-6 lg:grid-cols-[1fr_1.05fr]">
                   <div>
-                    {caseTakeaways[c.id] ? (
-                      <div className="mb-5 border border-border p-4">
-                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
-                          Challenge
-                        </div>
-                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                          {caseTakeaways[c.id]!.challenge}
-                        </p>
+                    <div className="mb-5 border border-border p-4">
+                      <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                        Challenge
                       </div>
-                    ) : null}
-                    <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
-                      Strategy
-                    </div>
-                    <div className="mt-2">
-                      {c.paras.map((p) => (
-                        <p key={p} className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
-                          {p}
-                        </p>
-                      ))}
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {c.challenge}
+                      </p>
                     </div>
 
-                    <div className="mt-2 font-mono text-[10.5px] tracking-wider text-signal uppercase">
-                      Execution
+                    <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                      Actions
                     </div>
-                    <ul className="my-6 space-y-3">
-                      {c.list.map((l) => (
-                        <li key={l.b} className="flex gap-3">
+                    <ul className="my-4 space-y-3">
+                      {c.actions.map((a, i) => (
+                        <li key={i} className="flex gap-3">
                           <span className="mt-0.5 shrink-0 border border-signal/40 px-2 py-1 font-mono text-[11px] text-signal">
-                            {l.b}
+                            {String(i + 1).padStart(2, "0")}
                           </span>
-                          <span className="text-sm leading-relaxed text-muted-foreground">
-                            <strong className="text-foreground">{l.strong}</strong> {l.text}
-                          </span>
+                          <span className="text-sm leading-relaxed text-muted-foreground">{a}</span>
                         </li>
                       ))}
                     </ul>
@@ -826,16 +436,14 @@ export function Work() {
                       </div>
                     ) : null}
 
-                    {caseTakeaways[c.id] ? (
-                      <div className="mt-6 border-l-2 border-signal bg-ink-2 p-4">
-                        <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
-                          Key takeaway
-                        </div>
-                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                          {caseTakeaways[c.id]!.takeaway}
-                        </p>
+                    <div className="mt-6 border-l-2 border-signal bg-ink-2 p-4">
+                      <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
+                        Key takeaway
                       </div>
-                    ) : null}
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {c.takeaway}
+                      </p>
+                    </div>
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
@@ -860,8 +468,8 @@ export function CreatorProof() {
         <SectionHead
           paper
           eyebrow="Creator proof"
-          title="Real collaborations, not a highlight reel"
-          lede="Creator campaigns I ran for Jewlera, Poochycat and Porlarisa — sourcing and vetting the creators, negotiating the collabs, briefing the content and tracking what each partnership returned. Storefront, packaging and e-commerce work supported the same campaigns."
+          title="Real creator collaborations"
+          lede="Creator campaigns I ran for Jewlera, Poochycat and Porlarisa — sourcing and vetting creators, negotiating collabs, briefing content and tracking results."
         />
         {creatorGalleries.map((g) => (
           <div key={g.brand} className="mt-12">
@@ -897,39 +505,122 @@ export function CreatorProof() {
   );
 }
 
-export function Now() {
+export function BrandExperience() {
   return (
-    <section id="now" className="border-b border-border py-20">
+    <section id="brands" className="border-b border-border py-20">
       <Wrap>
-        <SectionHead eyebrow="Right now" title="Currently building" />
-        <div className="mt-10 flex gap-4 surface-ink p-6">
-          <span className="mt-2 h-3 w-3 shrink-0 animate-pulse rounded-full bg-signal" />
-          <div>
-            <h3 className="font-display text-2xl font-semibold">
-              V Cut Gym — Co-Founder &amp; Social Media Manager
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Co-founded a fitness brand and have owned its social presence and content strategy
-              since 2024 — building brand identity and audience engagement from the ground up.
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Applying performance and influencer marketing experience from e-commerce to a local,
-              service-based brand: content calendar, organic growth, creator partnerships and
-              UGC-style content aimed at membership growth.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {["Content Creation", "Social Media Management", "Community Growth", "2024 — Present"].map(
-                (t) => (
-                  <span
-                    key={t}
-                    className="border border-border px-2.5 py-1 font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase"
-                  >
-                    {t}
+        <SectionHead
+          eyebrow="Brand experience"
+          title="Companies & brands I've worked with"
+          lede="Where I've worked, my role, and the results — aligned to the work I owned at each company."
+        />
+        <div className="mt-12 grid gap-px border border-border bg-border lg:grid-cols-2">
+          {brandExperience.map((b, i) => (
+            <Reveal key={b.brand} delay={(i % 2) * 60}>
+              <article className="h-full bg-background p-6">
+                <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border pb-4">
+                  <h3 className="font-display text-2xl font-bold tracking-tight">{b.brand}</h3>
+                  <span className="font-mono text-[10.5px] tracking-wide text-muted-foreground uppercase">
+                    {b.note}
                   </span>
-                ),
-              )}
+                </div>
+                <div className="mt-4 font-mono text-[11px] tracking-wider text-signal uppercase">
+                  {b.area}
+                </div>
+                <div className="mt-1 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
+                  {b.duration}
+                </div>
+
+                <ul className="mt-5 space-y-1.5">
+                  {b.worked.map((w) => (
+                    <li key={w} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                      <span className="text-signal">·</span>
+                      {w}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 font-mono text-[10.5px] tracking-wider text-foreground uppercase">
+                  Results
+                </div>
+                <ul className="mt-2 space-y-1.5">
+                  {b.results.map((r) => (
+                    <li key={r} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                      <span className="text-signal">→</span>
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function InfluencerExperience() {
+  return (
+    <section id="influencer" className="bg-paper py-20 text-paper-foreground">
+      <Wrap>
+        <SectionHead
+          paper
+          eyebrow="Core specialization"
+          title="Influencer & Creator Marketing"
+          lede="Finding the right creators, vetting them, negotiating the deal, running the campaign and connecting it to sales."
+        />
+        <div className="mt-10 grid grid-cols-2 gap-px border border-paper-border bg-paper-border md:grid-cols-3 lg:grid-cols-5">
+          {influencerNumbers.map((n) => (
+            <div key={n.lbl} className="bg-paper px-5 py-6">
+              <div className="font-display text-3xl font-bold tracking-tight text-signal-dim">
+                {n.num}
+              </div>
+              <div className="mt-2 font-mono text-[10.5px] tracking-wide text-paper-muted uppercase">
+                {n.lbl}
+              </div>
             </div>
-          </div>
+          ))}
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+export function Skills() {
+  return (
+    <section id="skills" className="border-b border-border py-20">
+      <Wrap>
+        <SectionHead
+          eyebrow="Skills"
+          title="What I bring to a growth team"
+          lede="Hands-on across the full DTC growth loop — paid media, creators, storefront and content reported into one set of numbers."
+        />
+        <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+          {skillGroups.map((g) => (
+            <div key={g.t} className="bg-background p-6">
+              <h3 className="font-display text-lg font-semibold">{g.t}</h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {g.items.map((i) => (
+                  <li
+                    key={i}
+                    className="border border-border px-2.5 py-1 font-mono text-[11px] text-muted-foreground"
+                  >
+                    {i}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+          {skills.map((s) => (
+            <div key={s.n} className="group bg-background p-6 transition-colors hover:bg-ink-2">
+              <div className="font-mono text-[11px] text-signal">{s.n}</div>
+              <h3 className="mt-3 font-display text-lg font-semibold">{s.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+            </div>
+          ))}
         </div>
       </Wrap>
     </section>
@@ -943,8 +634,8 @@ export function Experience() {
         <SectionHead
           paper
           eyebrow="Career timeline"
-          title="Roles, companies and marketing ownership"
-          lede="Where I've worked, what I was responsible for, and the results that came out of it."
+          title="Roles, companies and results"
+          lede="Where I've worked, my role, and the results that came out of it."
         />
         <div className="mt-12 ml-1.5 border-l border-paper-border">
           {timeline.map((t) => (
@@ -964,7 +655,7 @@ export function Experience() {
 
         <div className="mt-8">
           <Eyebrow>Tools</Eyebrow>
-          <h3 className="mt-3 font-display text-2xl font-semibold">Platforms &amp; software</h3>
+          <h3 className="mt-3 font-display text-2xl font-semibold">Platforms & software</h3>
           <div className="mt-5 flex flex-wrap gap-2.5">
             {tools.map((t) => (
               <span
@@ -981,22 +672,16 @@ export function Experience() {
   );
 }
 
-
-export function WhyMe() {
+export function About() {
   return (
-    <section id="why" className="bg-paper py-20 text-paper-foreground">
+    <section id="about" className="border-b border-border py-20">
       <Wrap>
-        <SectionHead
-          paper
-          eyebrow="Strengths"
-          title="What I bring to a marketing team"
-        />
-        <div className="mt-12 grid gap-px border border-paper-border bg-paper-border sm:grid-cols-2">
-          {proofPoints.map((p) => (
-            <div key={p.t} className="bg-paper p-6 transition-colors hover:bg-[oklch(0.92_0.016_85)]">
-              <h3 className="font-display text-lg font-semibold">{p.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper-muted">{p.d}</p>
-            </div>
+        <SectionHead eyebrow="About" title="Influencer marketing first, commercial thinking behind it" />
+        <div className="mt-6 space-y-4">
+          {aboutParas.map((p) => (
+            <p key={p} className="text-[15px] leading-relaxed text-muted-foreground">
+              {p}
+            </p>
           ))}
         </div>
       </Wrap>
@@ -1010,15 +695,12 @@ export function Faq() {
       <Wrap>
         <SectionHead
           eyebrow="FAQ"
-          title="What hiring teams usually ask me"
-          lede="Straight answers on the role I'm looking for, how I measure work and how I operate inside a marketing team."
+          title="What hiring teams usually ask"
+          lede="Straight answers on the role I'm looking for and how I measure work."
         />
         <div className="mt-12 space-y-3">
           {faqs.map((f) => (
-            <details
-              key={f.q}
-              className="group surface-ink open:border-signal/40"
-            >
+            <details key={f.q} className="group surface-ink open:border-signal/40">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-display text-base font-semibold transition-colors hover:text-signal [&::-webkit-details-marker]:hidden">
                 {f.q}
                 <span className="shrink-0 font-mono text-lg text-signal transition-transform group-open:rotate-45">
@@ -1042,10 +724,8 @@ export function Footer() {
       <Wrap>
         <Eyebrow>Contact</Eyebrow>
         <h2 className="mt-5 max-w-3xl font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-5xl">
-          Looking for a full-time growth marketer who can{" "}
-          <em className="text-signal not-italic">
-            own creators, paid media and e-commerce results?
-          </em>
+          Looking for a full-time marketer who can{" "}
+          <em className="text-signal not-italic">own creators, paid media and e-commerce results?</em>
         </h2>
         <div className="mt-9 flex flex-wrap gap-3">
           <a
@@ -1061,6 +741,14 @@ export function Footer() {
             className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
           >
             WhatsApp
+          </a>
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener"
+            className="border border-border px-5 py-3 font-mono text-xs tracking-wider uppercase transition-colors hover:border-signal hover:text-signal"
+          >
+            LinkedIn
           </a>
         </div>
 
@@ -1090,8 +778,8 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-8 font-mono text-[11px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} Karim Eid — Influencer &amp; Creator Marketing Specialist · E-commerce &amp; DTC Growth</p>
-          <p>Cairo · Riyadh · Remote — Arabic &amp; English</p>
+          <p>© {new Date().getFullYear()} Karim Eid — Influencer Marketing Manager & E-Commerce Growth</p>
+          <p>Cairo · Remote — Arabic & English</p>
         </div>
       </Wrap>
     </footer>
