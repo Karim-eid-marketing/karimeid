@@ -9,7 +9,6 @@ import {
   influencerNumbers,
   media,
   skillGroups,
-  skills,
   tickerItems,
   timeline,
   tools,
@@ -414,11 +413,17 @@ export function Work() {
 
                   </div>
 
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {c.shots.map((s) => (
-                      <Shot key={s.cap} src={s.src} cap={s.cap} wide={"wide" in s && s.wide} />
-                    ))}
-                  </div>
+                  <details className="group self-start border border-border bg-background">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold transition-colors hover:text-signal [&::-webkit-details-marker]:hidden">
+                      View campaign evidence ({c.shots.length})
+                      <span className="text-lg text-signal transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <div className="grid gap-4 border-t border-border p-4 sm:grid-cols-2">
+                      {c.shots.map((s) => (
+                        <Shot key={s.cap} src={s.src} cap={s.cap} wide={"wide" in s && s.wide} />
+                      ))}
+                    </div>
+                  </details>
                 </div>
               </article>
             </Reveal>
@@ -444,28 +449,34 @@ export function CreatorProof() {
             <div className="mb-4 border-b border-paper-border pb-2 font-mono text-[11px] tracking-wider text-paper-muted uppercase">
               {g.brand}
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {g.items.map((it) => (
-                <figure
-                  key={it.cap}
-                  className={`group border border-paper-border bg-paper ${
-                    "wide" in it && (it as { wide?: boolean }).wide ? "sm:col-span-2" : ""
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <img
-                      src={it.src}
-                      alt={it.cap}
-                      loading="lazy"
-                      className="w-full object-contain transition duration-500 group-hover:scale-[1.02]"
-                    />
-                  </div>
-                  <figcaption className="border-t border-paper-border px-3 py-2 font-mono text-[10.5px] text-paper-muted">
-                    {it.cap}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
+            <details className="group border border-paper-border" open={g === creatorGalleries[0]}>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold [&::-webkit-details-marker]:hidden">
+                View collaboration evidence ({g.items.length})
+                <span className="text-lg text-signal-dim transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div className="grid gap-4 border-t border-paper-border p-4 sm:grid-cols-2 lg:grid-cols-4">
+                {g.items.map((it) => (
+                  <figure
+                    key={it.cap}
+                    className={`group border border-paper-border bg-paper ${
+                      "wide" in it && (it as { wide?: boolean }).wide ? "sm:col-span-2" : ""
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <img
+                        src={it.src}
+                        alt={it.cap}
+                        loading="lazy"
+                        className="w-full object-contain transition duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <figcaption className="border-t border-paper-border px-3 py-2 text-xs text-paper-muted">
+                      {it.cap}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </details>
           </div>
         ))}
       </Wrap>
