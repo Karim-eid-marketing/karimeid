@@ -1,5 +1,5 @@
 # Roadmap
 
-- [ ] Finish the concise portfolio structure and restore a clean build.
-- [ ] Make the presentation feel more human, direct, and recruiter-friendly.
-- [ ] Verify desktop and mobile rendering without publishing.
+- [x] Finish the concise portfolio structure and restore a clean build.
+- [x] Make the presentation feel more human, direct, and recruiter-friendly.
+- [x] Verify desktop and mobile rendering without publishing.
