@@ -5,9 +5,6 @@ import {
   cases,
   contact,
   creatorGalleries,
-  faqs,
-  heroBadges,
-  heroChips,
   heroStats,
   influencerNumbers,
   media,
@@ -182,7 +179,7 @@ export function Hero() {
       <Wrap className="relative py-16 md:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_1fr]">
           <div>
-            <div className="mb-5 inline-flex items-center gap-2 border border-signal/50 bg-signal/10 px-3 py-1.5 font-mono text-[11px] tracking-wider text-signal uppercase">
+            <div className="mb-5 inline-flex items-center gap-2 border border-signal/50 bg-signal/10 px-3 py-1.5 text-xs font-medium text-signal">
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-signal" />
               Open to full-time opportunities
             </div>
@@ -190,13 +187,12 @@ export function Hero() {
               Karim Eid — Influencer Marketing Manager &{" "}
               <em className="text-signal not-italic">E-Commerce Growth</em>
             </h1>
-            <p className="mt-4 font-mono text-[12px] tracking-wider text-signal uppercase">
-              Influencer & Creator Marketing | Paid Media | Shopify | CRO
+            <p className="mt-4 text-sm font-medium text-signal">
+              Creator partnerships · Paid media · Shopify · CRO
             </p>
             <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-muted-foreground">
-              6+ years running influencer and performance marketing across DTC e-commerce brands — a
-              100+ creator network driving 50%+ of sales, up to 4x ROAS on Meta Ads, and 200% organic
-              growth. Cairo-based, bilingual (Arabic/English), open to full-time roles.
+              I help e-commerce brands turn creator partnerships, paid campaigns, and better storefronts
+              into measurable growth.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -221,26 +217,6 @@ export function Hero() {
                 LinkedIn
               </a>
             </div>
-            <div className="mt-7 flex flex-wrap gap-2">
-              {heroBadges.map((t) => (
-                <span
-                  key={t}
-                  className="border border-signal/40 bg-signal/5 px-3 py-1.5 font-mono text-[10.5px] tracking-wide text-signal uppercase"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {heroChips.map((t) => (
-                <span
-                  key={t}
-                  className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wide text-muted-foreground uppercase"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
           </div>
 
           <div className="relative">
@@ -260,7 +236,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-px border border-border bg-border md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-px border border-border bg-border md:grid-cols-4">
           {heroStats.map((s) => (
             <div key={s.lbl} className="bg-background px-5 py-6">
               <div className="font-display text-3xl font-bold tracking-tight text-signal">
@@ -283,9 +259,9 @@ export function Intro() {
       <Wrap className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
         <div>
           <SectionHead
-            eyebrow="Meet Karim"
-            title="60 seconds, straight from me."
-            lede="Who I am, what I do, and why I'd be a good fit — no script, just the short version."
+            eyebrow="A quick introduction"
+            title="A little more about me"
+            lede="A short introduction to how I think about creators, e-commerce, and growth."
           />
         </div>
         <div className="mx-auto w-full max-w-xs border border-border bg-ink-2 p-1.5 shadow-[var(--shadow-lift)] sm:max-w-sm">
@@ -302,8 +278,8 @@ export function Intro() {
       <Wrap className="mt-16">
         <SectionHead
           eyebrow="Ad creatives"
-          title="Meta ad creatives from our creator collabs"
-          lede="Live ad creatives we ran on Meta — built through creator collaborations, from briefing to testing as paid assets."
+          title="Creator-led ads used on Meta"
+          lede="Three examples created through influencer collaborations and tested as paid content."
         />
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {media.adCreatives.map((src, i) => (
@@ -333,8 +309,8 @@ export function Work() {
       <Wrap>
         <SectionHead
           eyebrow="Selected work"
-          title="Case studies: challenge, actions, results"
-          lede="Marketing work I owned for e-commerce brands, with the real screenshots behind it. Customer names and creator contact details are redacted."
+          title="The work and the results"
+          lede="A few examples of what I was responsible for, what I did, and what changed."
         />
 
         <div className="mt-12 space-y-10">
@@ -436,14 +412,6 @@ export function Work() {
                       </div>
                     ) : null}
 
-                    <div className="mt-6 border-l-2 border-signal bg-ink-2 p-4">
-                      <div className="font-mono text-[10.5px] tracking-wider text-signal uppercase">
-                        Key takeaway
-                      </div>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                        {c.takeaway}
-                      </p>
-                    </div>
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
@@ -469,7 +437,7 @@ export function CreatorProof() {
           paper
           eyebrow="Creator proof"
           title="Real creator collaborations"
-          lede="Creator campaigns I ran for Jewlera, Poochycat and Porlarisa — sourcing and vetting creators, negotiating collabs, briefing content and tracking results."
+          lede="Work across Jewlera, Poochycat, and Porlarisa — from sourcing and outreach to briefs, content, and tracking."
         />
         {creatorGalleries.map((g) => (
           <div key={g.brand} className="mt-12">
@@ -594,7 +562,7 @@ export function Skills() {
         <SectionHead
           eyebrow="Skills"
           title="What I bring to a growth team"
-          lede="Hands-on across the full DTC growth loop — paid media, creators, storefront and content reported into one set of numbers."
+          lede="The areas I work in day to day."
         />
         <div className="mt-12 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((g) => (
@@ -613,15 +581,6 @@ export function Skills() {
             </div>
           ))}
         </div>
-        <div className="mt-8 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-          {skills.map((s) => (
-            <div key={s.n} className="group bg-background p-6 transition-colors hover:bg-ink-2">
-              <div className="font-mono text-[11px] text-signal">{s.n}</div>
-              <h3 className="mt-3 font-display text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
-            </div>
-          ))}
-        </div>
       </Wrap>
     </section>
   );
@@ -635,7 +594,7 @@ export function Experience() {
           paper
           eyebrow="Career timeline"
           title="Roles, companies and results"
-          lede="Where I've worked, my role, and the results that came out of it."
+          lede="A concise view of my professional experience."
         />
         <div className="mt-12 ml-1.5 border-l border-paper-border">
           {timeline.map((t) => (
@@ -676,41 +635,12 @@ export function About() {
   return (
     <section id="about" className="border-b border-border py-20">
       <Wrap>
-        <SectionHead eyebrow="About" title="Influencer marketing first, commercial thinking behind it" />
+        <SectionHead eyebrow="About" title="How I got here" />
         <div className="mt-6 space-y-4">
           {aboutParas.map((p) => (
             <p key={p} className="text-[15px] leading-relaxed text-muted-foreground">
               {p}
             </p>
-          ))}
-        </div>
-      </Wrap>
-    </section>
-  );
-}
-
-export function Faq() {
-  return (
-    <section id="faq" className="border-b border-border py-20">
-      <Wrap>
-        <SectionHead
-          eyebrow="FAQ"
-          title="What hiring teams usually ask"
-          lede="Straight answers on the role I'm looking for and how I measure work."
-        />
-        <div className="mt-12 space-y-3">
-          {faqs.map((f) => (
-            <details key={f.q} className="group surface-ink open:border-signal/40">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-display text-base font-semibold transition-colors hover:text-signal [&::-webkit-details-marker]:hidden">
-                {f.q}
-                <span className="shrink-0 font-mono text-lg text-signal transition-transform group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-              <p className="border-t border-border px-5 py-4 text-sm leading-relaxed text-muted-foreground">
-                {f.a}
-              </p>
-            </details>
           ))}
         </div>
       </Wrap>
@@ -724,8 +654,8 @@ export function Footer() {
       <Wrap>
         <Eyebrow>Contact</Eyebrow>
         <h2 className="mt-5 max-w-3xl font-display text-3xl leading-[1.08] font-bold tracking-tight md:text-5xl">
-          Looking for a full-time marketer who can{" "}
-          <em className="text-signal not-italic">own creators, paid media and e-commerce results?</em>
+          Looking for someone who can turn creator work into{" "}
+          <em className="text-signal not-italic">real e-commerce growth?</em>
         </h2>
         <div className="mt-9 flex flex-wrap gap-3">
           <a

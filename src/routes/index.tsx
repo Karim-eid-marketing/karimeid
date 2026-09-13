@@ -1,29 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   About,
-  BrandExperience,
-  ByTheNumbers,
   CreatorProof,
-  Ecommerce,
   Experience,
-  Faq,
   Footer,
   Hero,
-  InfluencerExperience,
   Intro,
   Nav,
-  Now,
-  PaidMedia,
-  Seo,
   Skills,
-  Ticker,
-  WhyMe,
   Work,
 } from "@/components/portfolio/sections";
 
-const title = "Karim Eid — Influencer & Creator Marketing Specialist | DTC Growth";
+const title = "Karim Eid — Influencer Marketing Manager";
 const description =
-  "Influencer & creator marketing specialist and e-commerce/DTC growth marketer: 100+ creator network driving 50%+ of client sales, 4x avg ROAS, 20% lower CAC. Shopify, paid media, CRO.";
+  "Influencer Marketing Manager and e-commerce growth marketer with a 100+ creator network, up to 4x ROAS, and proven DTC results.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -45,7 +35,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Karim Eid",
-          jobTitle: "Influencer & Creator Marketing Specialist | E-Commerce & DTC Growth Marketer",
+          jobTitle: "Influencer Marketing Manager & E-Commerce Growth Marketer",
           email: "mailto:karimeid.work@gmail.com",
           telephone: "+201113166392",
           url: "/",
@@ -70,25 +60,15 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background">
-      <Ticker />
       <Nav />
       <main>
         <Hero />
         <Intro />
-        <ByTheNumbers />
-        <BrandExperience />
-        <InfluencerExperience />
-        <Skills />
-        <PaidMedia />
-        <Seo />
-        <Ecommerce />
         <Work />
         <CreatorProof />
-        <WhyMe />
-        <Now />
         <Experience />
+        <Skills />
         <About />
-        <Faq />
       </main>
       <Footer />
     </div>
