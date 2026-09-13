@@ -64,29 +64,10 @@ export const tickerItems: Array<[string, string, "up" | "down"]> = [
 ];
 
 export const heroStats = [
-  { num: "4x", lbl: "Avg. ROAS" },
+  { num: "4x", lbl: "ROAS achieved" },
   { num: "+200%", lbl: "Organic growth, V Cut" },
-  { num: "100+", lbl: "Creators network" },
+  { num: "100+", lbl: "Creators worked with" },
   { num: "+30%", lbl: "First-month sales, Decogal" },
-  { num: "EGP 100K", lbl: "Ad budget managed" },
-];
-
-export const heroBadges = [
-  "4x ROAS",
-  "100+ creators",
-  "200% organic growth",
-  "30% first-month sales",
-  "50%+ creator-driven sales",
-];
-
-export const heroChips = [
-  "Influencer Marketing",
-  "Paid Media",
-  "Meta Ads",
-  "Shopify",
-  "CRO",
-  "SEO",
-  "Social Media",
 ];
 
 export const skills = [
@@ -365,14 +346,6 @@ export const skillGroups = [
 ];
 
 export const aboutParas = [
-  "Influencer and creator marketing specialist with 6+ years of hands-on experience across DTC e-commerce brands — sourcing and vetting creators, running outreach and negotiation, and turning creator partnerships into tracked sales.",
-  "Performance marketing across Meta, TikTok and Google Ads (up to 4x ROAS), plus Shopify CRO, SEO and social content — connecting creator campaigns to the rest of the funnel instead of running them in isolation.",
-  "Looking to bring that experience into a full-time marketing team where I can own influencer and creator partnerships and support wider growth work day to day.",
-];
-
-export const faqs = [
-  { q: "What role are you looking for?", a: "A full-time Influencer Marketing Manager or E-commerce Growth role where creator partnerships and performance marketing are core to the job." },
-  { q: "What's your strongest area?", a: "Influencer and creator marketing: discovery, vetting, outreach, negotiation, UGC and tracking creator campaigns to sales. Paid media, Shopify CRO, SEO and social support that core." },
-  { q: "How do you measure influencer campaigns?", a: "Per-creator discount codes and links, code redemptions, reach, sales share and cost per acquired customer — each creator judged on contribution, not follower count." },
-  { q: "Which markets and languages?", a: "Egypt and Saudi Arabia natively, plus US and EU DTC audiences. Bilingual in Arabic and English, set up for async remote work." },
+  "I started in affiliate marketing, then moved into Shopify, paid campaigns, and creator partnerships. That mix taught me to care about the full journey — not just reach, clicks, or a good-looking post.",
+  "I’m now looking for a full-time team where I can own influencer marketing and contribute across e-commerce growth, paid media, content, CRO, and SEO.",
 ];

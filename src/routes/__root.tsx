@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Karim Eid — Performance & Influencer Marketing" },
+      { title: "Karim Eid — Influencer Marketing Manager" },
       {
         name: "description",
         content:
-          "Performance and influencer marketing specialist for Shopify DTC brands — paid media, creators, SEO and e-commerce growth.",
+          "Influencer Marketing Manager and e-commerce growth marketer with hands-on experience across creators, paid media, Shopify, CRO, and SEO.",
       },
       { name: "author", content: "Karim Eid" },
       { property: "og:site_name", content: "Karim Eid" },
